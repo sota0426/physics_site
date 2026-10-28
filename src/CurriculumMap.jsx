@@ -1,5 +1,6 @@
 import React from 'react';
 import {ArrowDown, ChevronRight, Compass, Sparkles} from 'lucide-react';
+import SectionTerms from './SectionTerms';
 
 const numerals=['','一','二','三','四','五'];
 export const chapterLabel=chapter=>`第${numerals[chapter.number]}章　${chapter.title}`;
@@ -18,6 +19,7 @@ export default function CurriculumMap({part,color,onSelect,extension}) {
           <span className="section-copy"><span className="section-kicker">セクション{section.number}</span><strong>{section.number}.{section.title}</strong><span className="section-depths"><span>1 わかる</span><span>2 使える</span><span>3 説明できる</span></span></span>
           <ChevronRight className="section-arrow" size={18}/>
         </button>
+        <SectionTerms sectionId={section.id}/>
       </React.Fragment>)}</div>
     </section>)}
     {extension&&<section className="curriculum-extension"><Sparkles size={19}/><div><h3>{extension.title}</h3><p>{extension.objectives}</p></div></section>}
