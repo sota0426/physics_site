@@ -1,0 +1,11 @@
+export const missionStories={
+ 'part-1-chapter-1-section-1-lesson-1-A':{number:'MISSION 01',title:'迷子の隕石サンプルを探せ',setting:'アトリエの観測隊が、公園で小さな隕石を見失ってしまった。歩いた道は分かるけれど、回収ドローンには「今いる場所」を最短の矢印で伝えなくてはならない。',mission:'曲がりくねった道のりから、スタート地点と現在地を結ぶ「変位」を見つけよう。',dialogue:'道を全部説明しなくても、始点から終点への矢印が一本あれば伝えられそう！',diagram:'displacement'},
+ 'part-1-chapter-1-section-1-lesson-1-B':{number:'MISSION 02',title:'夜空便の進み方を伝えよう',setting:'観測データを運ぶ小型ドローンが飛び立つ。管制室が知りたいのは、メーターに出る速さだけではなく、どちらへ進んでいるかだ。',mission:'動きの大きさと向きをひとつの矢印で表し、速度を見つけよう。',dialogue:'同じ5 m/sでも、東へ行くのと西へ行くのでは到着する場所が違うね。',diagram:'velocity'},
+ 'part-1-chapter-1-section-1-lesson-1-C':{number:'MISSION 03',title:'月面ローバーのカーブを見抜け',setting:'ローバーは速さを変えずにクレーターを回り込んでいる。ところが加速度センサーは反応した。故障なのか、それとも速度に秘密があるのか。',mission:'カーブの前後で速度の矢印を比べ、変化したものを突き止めよう。',dialogue:'矢印の長さだけじゃなく、向きも見てみよう。センサーは何を感じたのかな？',diagram:'acceleration'},
+ 'part-1-chapter-1-section-1-lesson-1-D':{number:'MISSION 04',title:'レーダーの矢印を二つに分けろ',setting:'観測レーダーには斜めの速度が一本だけ表示されている。でも制御装置が読めるのは横方向と縦方向の数値だけだ。',mission:'斜めのベクトルをx方向とy方向の「影」に分けよう。',dialogue:'一本の斜め矢印を、横と縦の二つの矢印に翻訳すれば機械にも伝わるよ。',diagram:'components'},
+ 'part-1-chapter-1-section-1-lesson-1-E':{number:'MISSION 05',title:'流される観測船を研究島へ導け',setting:'船は北へ進みたいのに、川は東へ流している。船のエンジンと川の流れ、二つの速度を正しく合わせないと研究島へ着けない。',mission:'船から見た速度と岸から見た速度を、ベクトルとして合成しよう。',dialogue:'平面では3+4と数字だけを足せないよ。二本の矢印をつないでみよう！',diagram:'river'},
+ 'part-1-chapter-1-section-1-lesson-1-F':{number:'MISSION 06',title:'探査カプセルの進路を立て直せ',setting:'カプセルには横向きの噴射と上向きの噴射が同時にはたらく。どちらか一方だけを見ていては、実際の加速方向を予測できない。',mission:'力を方向ごとに整理し、合力と加速度の向きを決めよう。',dialogue:'力も矢印。全部を合わせた一本の矢印が、加速度の行き先を教えてくれるよ。',diagram:'forces'},
+ 'part-1-chapter-1-section-2-lesson-2-A':{number:'MISSION 07',title:'崖の観測所へ救援物資を届けろ',setting:'崖の端から物資を水平に送り出す。前へ進みながら下へ落ちる物資は、二つの運動を同時にしているようだ。',mission:'水平方向と鉛直方向を分けて、物資がどこへ着くか考えよう。',dialogue:'曲がった軌道も、横の動きと縦の動きを別々に見るとシンプルになるよ。',diagram:'horizontal'},
+ 'part-1-chapter-1-section-2-lesson-2-B':{number:'MISSION 08',title:'山頂へ合図のフレアを飛ばせ',setting:'救援隊へ知らせるフレアを斜め上へ打ち出す。角度を変えると、高さも届く距離も変わってしまう。',mission:'最初の速度を水平・鉛直成分に分け、放物線の旅を追いかけよう。',dialogue:'斜めの初速度を二つに分ければ、最高点の秘密も見えてくるね。',diagram:'projectile'},
+ 'part-1-chapter-1-section-2-lesson-2-C':{number:'MISSION 09',title:'落下カプセルを安全な速さにせよ',setting:'大気へ入ったカプセルは、落ちるほど空気から強く押し返される。やがて速さがほとんど変わらなくなるのはなぜだろう。',mission:'重力と空気抵抗の競争を追い、終端速度が生まれる理由を探ろう。',dialogue:'速くなるほど抵抗も大きくなる。二つの力が同じになった瞬間に注目だよ。',diagram:'drag'},
+};
