@@ -254,10 +254,27 @@ const entries = {
  ]
 };
 
+// 公式一覧から参照する、物理基礎の前提用語。既存の用語IDは維持して末尾に追加。
+const prerequisites={
+ '1-1-1':[
+  ['運動方程式','物体にはたらく合力と加速度を結びつける法則。質量一定の物体ではΣF⃗=ma⃗です。','台車を押す力を強くすると、同じ質量なら加速度が大きくなります。','力の合計を使い、慣性系で立式します。速度が大きいことと、合力が大きいことは同じではありません。'],
+  ['摩擦力','接触面に沿って、相対的な滑りや滑ろうとする運動を妨げる向きの力。','押しても動かない箱には、押す力に応じた静止摩擦力がはたらきます。','静止摩擦力には上限があります。最大値μₛNと、実際の静止摩擦力を区別します。'],
+  ['仕事と力学的エネルギー','仕事は力によるエネルギーの移動を表す量。力学的エネルギーは運動と位置に関係するエネルギーの和です。','摩擦のない斜面では、高さが減ると速さが増し、位置エネルギーが運動エネルギーに変わります。','仕事は力と移動の向きに依存します。力学的エネルギーの保存には、非保存力の仕事などを確認します。']
+ ],
+ '2-1-1':[
+  ['圧力','面を垂直に押す力を、その面積で割った量。単位はPaです。','同じ力でも、狭い面積に集中すると圧力は大きくなります。','p=F⊥/S。液体中の圧力は深さでも変わり、絶対圧と水面圧との差を区別します。'],
+  ['浮力','流体の圧力が物体の各面にはたらいた結果として生じる、通常は鉛直上向きの合力。','水中へ沈めた物体が軽く感じるのは、浮力を受けるためです。','一様な密度の流体では、押しのけた流体の重さρgVに等しくなります。物体の密度を代入しません。']
+ ],
+ '2-1-3':[
+  ['熱容量と比熱','熱容量は物体全体の温まりにくさ、比熱容量は単位質量あたりの温まりにくさを表します。','同じ温度だけ上げる場合、水の量が多いほど多くの熱量が必要になります。','C=mc。相変化や加熱条件に注意し、１molあたりのモル熱容量とも単位を区別します。']
+ ]
+};
+const prerequisiteNames=new Set(Object.values(prerequisites).flat().map(t=>t[0]));
+for(const [key,terms] of Object.entries(prerequisites))entries[key].push(...terms);
 export const glossaryBySection=Object.fromEntries(Object.entries(entries).map(([key,terms])=>{
  const [part,chapter,section]=key.split('-');
  const sectionId=`part-${part}-chapter-${chapter}-section-${section}`;
- return [sectionId,terms.map(([name,definition,example,point],i)=>({id:`${sectionId}-term-${i+1}`,sectionId,name,definition,example,point}))];
+ return [sectionId,terms.map(([name,definition,example,point],i)=>({id:`${sectionId}-term-${i+1}`,sectionId,name,definition,example,point,prerequisite:prerequisiteNames.has(name)}))];
 }));
 export const glossaryTerms=Object.values(glossaryBySection).flat();
 export const termHref=(term)=>`#/glossary/${term.sectionId}/${term.id}`;
