@@ -1,0 +1,2219 @@
+{
+  "source": {
+    "filename": "rika_16630_syllabus.pdf",
+    "textbook": "東京書籍「物理」（物理701）",
+    "description": "A・B・C等の小単元を、既存の学習指導計画のセクションに対応付けたもの。",
+    "sourceUnitCount": 168
+  },
+  "sections": {
+    "part-1-chapter-1-section-1": [
+      {
+        "id": "part-1-chapter-1-section-1-lesson-1-A",
+        "label": "A",
+        "title": "変位",
+        "sourceLesson": "平面内の運動",
+        "sourceGroup": 1,
+        "sourcePage": 1,
+        "goals": [
+          "平面内を運動している物体のようすを表すのに必要な物理量のうち、位置ベクトルや変位（ベクトル）について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-1-section-1-lesson-1-B",
+        "label": "B",
+        "title": "速度",
+        "sourceLesson": "平面内の運動",
+        "sourceGroup": 1,
+        "sourcePage": 1,
+        "goals": [
+          "平面内を運動している物体のようすを表すのに必要な物理量のうち、速度（平均の速度、瞬間の速度）について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-1-section-1-lesson-1-C",
+        "label": "C",
+        "title": "加速度",
+        "sourceLesson": "平面内の運動",
+        "sourceGroup": 1,
+        "sourcePage": 1,
+        "goals": [
+          "平面内を運動している物体のようすを表すのに必要な物理量のうち、加速度（平均の加速度、瞬間の加速度）について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-1-section-1-lesson-1-D",
+        "label": "D",
+        "title": "ベクトルの成分表示",
+        "sourceLesson": "平面内の運動",
+        "sourceGroup": 1,
+        "sourcePage": 1,
+        "goals": [
+          "ベクトルで表された物理量について、座標軸を定めることで成分（スカラー）によって表示でき、成分で変位や速度、加速度を考えることができることを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-1-section-1-lesson-1-E",
+        "label": "E",
+        "title": "平面内の合成速度と相対速度",
+        "sourceLesson": "平面内の運動",
+        "sourceGroup": 1,
+        "sourcePage": 2,
+        "goals": [
+          "平面内での合成速度とその求め方について理解する。",
+          "平面内での相対速度とその求め方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-1-section-1-lesson-1-F",
+        "label": "F",
+        "title": "運動の法則",
+        "sourceLesson": "平面内の運動",
+        "sourceGroup": 1,
+        "sourcePage": 2,
+        "goals": [
+          "「物理基礎」で学習した一直線上における運動の法則について、平面内においても同様に扱えることを理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-1-section-2": [
+      {
+        "id": "part-1-chapter-1-section-2-lesson-2-A",
+        "label": "A",
+        "title": "水平投射",
+        "sourceLesson": "放物運動",
+        "sourceGroup": 2,
+        "sourcePage": 2,
+        "goals": [
+          "水平投射された物体の運動を水平方向と鉛直方向に分解し、どのように成分表示されるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-1-section-2-lesson-2-B",
+        "label": "B",
+        "title": "斜方投射",
+        "sourceLesson": "放物運動",
+        "sourceGroup": 2,
+        "sourcePage": 2,
+        "goals": [
+          "斜方投射された物体の運動を水平方向と鉛直方向に分解し、どのように成分表示される間か理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-1-section-2-lesson-2-C",
+        "label": "C",
+        "title": "空気の抵抗力",
+        "sourceLesson": "放物運動",
+        "sourceGroup": 2,
+        "sourcePage": 2,
+        "goals": [
+          "空気中を落下する物体には抵抗力がはたらくこと、そのときの物体の運動のようすがどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-2-section-1": [
+      {
+        "id": "part-1-chapter-2-section-1-lesson-3-A",
+        "label": "A",
+        "title": "大きさのある物体",
+        "sourceLesson": "剛体と力のモーメント",
+        "sourceGroup": 3,
+        "sourcePage": 2,
+        "goals": [
+          "「物理基礎」で学習した質点と異なり、大きさと質量をもつ物体（剛体）があること、その運動のようすについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-2-section-1-lesson-3-B",
+        "label": "B",
+        "title": "剛体のつり合い",
+        "sourceLesson": "剛体と力のモーメント",
+        "sourceGroup": 3,
+        "sourcePage": 2,
+        "goals": [
+          "小学校での「てこ」をふまえて、剛体が傾く（回転する）ときと傾かない（回転しない）ときの条件を理解する。",
+          "剛体を回転させる効果を力のモーメントということ、その表し方について理解する。",
+          "実験1を行い、実験結果を踏まえて棒（剛体）がつり合っているときの力の関係や力のモーメントの関係について考察する。",
+          "剛体がつり合う条件について理解する。",
+          "剛体にはたらく2力の合成のしかたや偶力について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-2-section-2": [
+      {
+        "id": "part-1-chapter-2-section-2-lesson-3-B",
+        "label": "B",
+        "title": "剛体のつり合い",
+        "sourceLesson": "剛体と力のモーメント",
+        "sourceGroup": 3,
+        "sourcePage": 2,
+        "goals": [
+          "小学校での「てこ」をふまえて、剛体が傾く（回転する）ときと傾かない（回転しない）ときの条件を理解する。",
+          "剛体を回転させる効果を力のモーメントということ、その表し方について理解する。",
+          "実験1を行い、実験結果を踏まえて棒（剛体）がつり合っているときの力の関係や力のモーメントの関係について考察する。",
+          "剛体がつり合う条件について理解する。",
+          "剛体にはたらく2力の合成のしかたや偶力について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-2-section-2-lesson-3-C",
+        "label": "C",
+        "title": "重心",
+        "sourceLesson": "剛体と力のモーメント",
+        "sourceGroup": 3,
+        "sourcePage": 2,
+        "goals": [
+          "さまざまな物体の重心について理解する。",
+          "2物体や3物体以上の重心の位置の求め方について理解する。",
+          "物体が転倒しない条件について知る。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-3-section-1": [
+      {
+        "id": "part-1-chapter-3-section-1-lesson-4-A",
+        "label": "A",
+        "title": "力積",
+        "sourceLesson": "力積と運動量",
+        "sourceGroup": 4,
+        "sourcePage": 3,
+        "goals": [
+          "物体に加える力の大きさと時間の関係について考え、力と時間の積を力積ということを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-3-section-1-lesson-4-B",
+        "label": "B",
+        "title": "力積と運動量",
+        "sourceLesson": "力積と運動量",
+        "sourceGroup": 4,
+        "sourcePage": 3,
+        "goals": [
+          "質量と速度の積を運動量ということを理解する。",
+          "物体に与えた力積と物体の運動量の関係について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-3-section-1-lesson-4-C",
+        "label": "C",
+        "title": "運動量",
+        "sourceLesson": "力積と運動量",
+        "sourceGroup": 4,
+        "sourcePage": 3,
+        "goals": [
+          "運動量という物理量について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-3-section-1-lesson-4-D",
+        "label": "D",
+        "title": "撃力と平均の力",
+        "sourceLesson": "力積と運動量",
+        "sourceGroup": 4,
+        "sourcePage": 3,
+        "goals": [
+          "ごく短い時間にはたらく力を撃力といい、撃力と平均の力の関係について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-3-section-2": [
+      {
+        "id": "part-1-chapter-3-section-2-lesson-5-A",
+        "label": "A",
+        "title": "直線上での衝突と運動量",
+        "sourceLesson": "運動量の保存",
+        "sourceGroup": 5,
+        "sourcePage": 3,
+        "goals": [
+          "直線上で物体が衝突するときにどの物理量がどのような関係になっているか、仮説を立てて検証方法を考える。",
+          "実験結果をふまえて、速度や運動エネルギー、運動量の関係が衝突の前後でどのようになっているか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-3-section-2-lesson-5-B",
+        "label": "B",
+        "title": "直線上での運動量の保存",
+        "sourceLesson": "運動量の保存",
+        "sourceGroup": 5,
+        "sourcePage": 3,
+        "goals": [
+          "直線上で物体が衝突するときに、運動量が保存されることを文字式から導き、理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-3-section-2-lesson-5-C",
+        "label": "C",
+        "title": "運動量の保存",
+        "sourceLesson": "運動量の保存",
+        "sourceGroup": 5,
+        "sourcePage": 3,
+        "goals": [
+          "直線上に限らず、平面上でも運動量が保存されること、運動量が保存されるときには外力がはたらかないかはたらいていても和が0であることを理解する。",
+          "衝突や分裂する際に、物体全体の重心の運動は変化しないことを知る。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-3-section-3": [
+      {
+        "id": "part-1-chapter-3-section-3-lesson-6-A",
+        "label": "A",
+        "title": "床や壁との衝突",
+        "sourceLesson": "反発係数",
+        "sourceGroup": 6,
+        "sourcePage": 3,
+        "goals": [
+          "物体を床や壁に衝突させたときの反発係数が、衝突前後の速さの比で表されることを理解する。",
+          "反発係数の違いによって、弾性衝突、非弾性衝突、完全非弾性衝突に分類されることを理解する。",
+          "面に斜めに衝突する際の物体の速度と反発係数との関係について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-3-section-3-lesson-6-B",
+        "label": "B",
+        "title": "直線上の2物体の衝突",
+        "sourceLesson": "反発係数",
+        "sourceGroup": 6,
+        "sourcePage": 3,
+        "goals": [
+          "直線上で2物体が衝突するときの反発係数が、衝突前後での相対速度の大きさの比で表されることを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-3-section-3-lesson-6-C",
+        "label": "C",
+        "title": "運動量と力学的エネルギー",
+        "sourceLesson": "反発係数",
+        "sourceGroup": 6,
+        "sourcePage": 3,
+        "goals": [
+          "反発係数の違いによって、衝突前後での力学的エネルギーがどのように変化するかを理解する。",
+          "運動量保存の法則について、さまざまな状況での演習を行い、理解を深める。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-4-section-1": [
+      {
+        "id": "part-1-chapter-4-section-1-lesson-7-A",
+        "label": "A",
+        "title": "等速円運動の表し方",
+        "sourceLesson": "円運動",
+        "sourceGroup": 7,
+        "sourcePage": 4,
+        "goals": [
+          "等速円運動を表す量として、周期や回転数、速度について、その表し方や関係を理解する。",
+          "円運動を表す量として、角速度について表し方や速度との関係について理解する。",
+          "等速円運動する物体の加速度がどのように表されるか、考え方とともに理解する。",
+          "円運動の角速度で用いる角度の表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-1-lesson-7-B",
+        "label": "B",
+        "title": "円運動に必要な力",
+        "sourceLesson": "円運動",
+        "sourceGroup": 7,
+        "sourcePage": 4,
+        "goals": [
+          "等速円運動する物体にはたらく力について、運動方程式をもとに表し理解する。",
+          "水平面内だけでなく、鉛直面内で円運動する物体の運動のようすを例題をもとに理解を深める。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-4-section-2": [
+      {
+        "id": "part-1-chapter-4-section-2-lesson-8-A",
+        "label": "A",
+        "title": "直線運動における慣性力",
+        "sourceLesson": "慣性力",
+        "sourceGroup": 8,
+        "sourcePage": 4,
+        "goals": [
+          "直線運動における地面で静止している人から見た運動する物体のようすと、物体とともに運動する人が見た物体のようすについて比較しながら考え、慣性力について理解する。",
+          "慣性系と非慣性系について知る。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-2-lesson-8-B",
+        "label": "B",
+        "title": "円運動における慣性力",
+        "sourceLesson": "慣性力",
+        "sourceGroup": 8,
+        "sourcePage": 4,
+        "goals": [
+          "円運動における慣性力である遠心力について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-4-section-3": [
+      {
+        "id": "part-1-chapter-4-section-3-lesson-9-A",
+        "label": "A",
+        "title": "単振動とは",
+        "sourceLesson": "単振動",
+        "sourceGroup": 9,
+        "sourcePage": 4,
+        "goals": [
+          "単振動する物体の変位の時間変化が正弦曲線で表されることを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-3-lesson-9-B",
+        "label": "B",
+        "title": "単振動の表し方",
+        "sourceLesson": "単振動",
+        "sourceGroup": 9,
+        "sourcePage": 4,
+        "goals": [
+          "単振動が等速円運動の射影であること、変位や速度、加速度がどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-3-lesson-10-A",
+        "label": "A",
+        "title": "ばね振り子",
+        "sourceLesson": "さまざまな単振動",
+        "sourceGroup": 10,
+        "sourcePage": 5,
+        "goals": [
+          "実験結果をふまえて、鉛直ばね振り子の周期と振幅やばね定数、おもりの質量とがどのような関係にあるか理解する。",
+          "鉛直ばね振り子の周期がどのように表されるか論理的な導出をふまえて理解する。",
+          "水平ばね振り子の周期がどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-3-lesson-10-B",
+        "label": "B",
+        "title": "単振動を引き起こす力と単振動の周期",
+        "sourceLesson": "さまざまな単振動",
+        "sourceGroup": 10,
+        "sourcePage": 5,
+        "goals": [
+          "物体が単振動するときにはたらく力を復元力ということ、復元力の表し方について理解する。",
+          "一般的な単振動の周期の表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-3-lesson-10-C",
+        "label": "C",
+        "title": "単振り子",
+        "sourceLesson": "さまざまな単振動",
+        "sourceGroup": 10,
+        "sourcePage": 5,
+        "goals": [
+          "実験結果をふまえて、単振り子の周期と振れ角やおもりの質量、単振り子の長さとがどのような関係にあるか理解する。",
+          "単振り子の周期がどのように表されるか論理的な導出をふまえて理解する。",
+          "振り子の等時性について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-3-lesson-11-A",
+        "label": "A",
+        "title": "単振動のエネルギー",
+        "sourceLesson": "単振動のエネルギー",
+        "sourceGroup": 11,
+        "sourcePage": 5,
+        "goals": [
+          "単振動する物体がもつエネルギーについて、その表し方とともに理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-1-chapter-4-section-4": [
+      {
+        "id": "part-1-chapter-4-section-4-lesson-12-A",
+        "label": "A",
+        "title": "ケプラーの法則",
+        "sourceLesson": "惑星の運動",
+        "sourceGroup": 12,
+        "sourcePage": 5,
+        "goals": [
+          "惑星の軌道や惑星の諸定数から、惑星の運動にどのような規則性があるのか考え、ケプラーの法則について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-4-lesson-13-A",
+        "label": "A",
+        "title": "万有引力の法則",
+        "sourceLesson": "万有引力",
+        "sourceGroup": 13,
+        "sourcePage": 5,
+        "goals": [
+          "2つの物体間にはたらく万有引力の法則について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-4-lesson-13-B",
+        "label": "B",
+        "title": "重力",
+        "sourceLesson": "万有引力",
+        "sourceGroup": 13,
+        "sourcePage": 5,
+        "goals": [
+          "万有引力の法則から重力がどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-4-lesson-13-C",
+        "label": "C",
+        "title": "人工衛星",
+        "sourceLesson": "万有引力",
+        "sourceGroup": 13,
+        "sourcePage": 5,
+        "goals": [
+          "人工衛星の速さが、地表からの高さの違いによってどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-4-section-4-lesson-13-D",
+        "label": "D",
+        "title": "万有引力による位置エネルギー",
+        "sourceLesson": "万有引力",
+        "sourceGroup": 13,
+        "sourcePage": 5,
+        "goals": [
+          "万有引力による位置エネルギーについて理解する。",
+          "万有引力による位置エネルギーをもとに、第2宇宙速度について理解する。",
+          "第3宇宙速度について知る。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-2-chapter-1-section-1": [
+      {
+        "id": "part-2-chapter-1-section-1-lesson-14-A",
+        "label": "A",
+        "title": "気体の圧力",
+        "sourceLesson": "気体の性質",
+        "sourceGroup": 14,
+        "sourcePage": 6,
+        "goals": [
+          "中学校や物理基礎で学習した気体の圧力について、気体分子から見たときにどのように考えられるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-1-lesson-14-B",
+        "label": "B",
+        "title": "ボイル・シャルルの法則",
+        "sourceLesson": "気体の性質",
+        "sourceGroup": 14,
+        "sourcePage": 6,
+        "goals": [
+          "シャルルの法則・気体の温度が一定のとき、気体の体積と圧力が反比例する（ボイルの法則）ことについて理解する。",
+          "気体の圧力が一定のとき、気体の体積が絶対温度に比例する（シャルルの法則）ことについて理解する。",
+          "ボイルの法則とシャルルの法則をまとめて表すことができる（ボイル・シャルルの法則）ことについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-1-lesson-14-C",
+        "label": "C",
+        "title": "理想気体の状態方程式",
+        "sourceLesson": "気体の性質",
+        "sourceGroup": 14,
+        "sourcePage": 6,
+        "goals": [
+          "理想気体とはどのような気体か理解し、気体の量を表すときに物質量を用いることを理解する。",
+          "理想気体の状態方程式について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-2-chapter-1-section-2": [
+      {
+        "id": "part-2-chapter-1-section-2-lesson-15-A",
+        "label": "A",
+        "title": "気体分子の運動と圧力",
+        "sourceLesson": "気体分子の運動と状態方程式",
+        "sourceGroup": 15,
+        "sourcePage": 6,
+        "goals": [
+          "気体分子の運動によって、気体の圧力がどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-2-lesson-15-B",
+        "label": "B",
+        "title": "気体分子の運動と絶対温度",
+        "sourceLesson": "気体分子の運動と状態方程式",
+        "sourceGroup": 15,
+        "sourcePage": 6,
+        "goals": [
+          "気体分子の運動によって、気体分子の運動エネルギーと絶対温度の関係がどのように表されるか理解する。",
+          "気体の2乗平均速度について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-2-lesson-15-C",
+        "label": "C",
+        "title": "気体分子の運動と気体の内部エネルギー",
+        "sourceLesson": "気体分子の運動と状態方程式",
+        "sourceGroup": 15,
+        "sourcePage": 6,
+        "goals": [
+          "気体分子の運動によって、気体の内部エネルギーがどのように表されるか理解する。",
+          "単原子分子気体と多原子分子気体の違いについて理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-2-chapter-1-section-3": [
+      {
+        "id": "part-2-chapter-1-section-3-lesson-16-A",
+        "label": "A",
+        "title": "熱力学第1法則",
+        "sourceLesson": "熱力学第1法則と気体の状態変化",
+        "sourceGroup": 16,
+        "sourcePage": 6,
+        "goals": [
+          "熱力学第1法則について理解する。間"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-3-lesson-16-B",
+        "label": "B",
+        "title": "気体のする仕事",
+        "sourceLesson": "熱力学第1法則と気体の状態変化",
+        "sourceGroup": 16,
+        "sourcePage": 6,
+        "goals": [
+          "気体がする仕事、される仕事と熱力学第1法則についての関係を理解する。",
+          "実験結果をふまえて、気体が仕事をされたときの熱力学第1法則との関係を理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-3-lesson-16-C",
+        "label": "C",
+        "title": "熱力学第1法則と気体の状態変化",
+        "sourceLesson": "熱力学第1法則と気体の状態変化",
+        "sourceGroup": 16,
+        "sourcePage": 6,
+        "goals": [
+          "等温変化、断熱変化、定積変化、定圧変化での熱力学第1法則との関係について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-3-lesson-16-D",
+        "label": "D",
+        "title": "気体のモル熱容量",
+        "sourceLesson": "熱力学第1法則と気体の状態変化",
+        "sourceGroup": 16,
+        "sourcePage": 6,
+        "goals": [
+          "気体が定積変化、定圧変化するときの比熱容量について理解する。",
+          "定積モル熱容量と定圧モル熱容量の関係について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-3-lesson-16-E",
+        "label": "E",
+        "title": "気体の状態変化のまとめ",
+        "sourceLesson": "熱力学第1法則と気体の状態変化",
+        "sourceGroup": 16,
+        "sourcePage": 6,
+        "goals": [
+          "気体の状態変化における状態方程式や熱力学第1法則について振り返る。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-3-lesson-17-A",
+        "label": "A",
+        "title": "熱力学第2法則と熱効率",
+        "sourceLesson": "熱力学第2法則と熱機関",
+        "sourceGroup": 17,
+        "sourcePage": 7,
+        "goals": [
+          "物理基礎で学習した熱機関の熱効率をふまえて、熱力学第2法則について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-3-lesson-17-B",
+        "label": "B",
+        "title": "熱力学第2法則と可逆変化、不可逆変化",
+        "sourceLesson": "熱力学第2法則と熱機関",
+        "sourceGroup": 17,
+        "sourcePage": 7,
+        "goals": [
+          "可逆変化と不可逆変化についてエントロピーと関連付けて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-1-section-3-lesson-17-C",
+        "label": "C",
+        "title": "熱力学第2法則の別の表し方",
+        "sourceLesson": "熱力学第2法則と熱機関",
+        "sourceGroup": 17,
+        "sourcePage": 7,
+        "goals": [
+          "熱力学第2法則がさまざまな表し方をできることを理解する。",
+          "代表的な熱機関のサイクルであるカルノーサイクルについて理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-3-chapter-1-section-1": [
+      {
+        "id": "part-3-chapter-1-section-1-review",
+        "label": "復習",
+        "title": "波と媒質の運動を振り返る",
+        "sourceLesson": "既習事項の確認",
+        "goals": [
+          "波の進む向きと媒質の振動する向きを区別し、波長・振動数・速さの関係を説明する。"
+        ],
+        "origin": "review"
+      }
+    ],
+    "part-3-chapter-1-section-2": [
+      {
+        "id": "part-3-chapter-1-section-2-lesson-18-A",
+        "label": "A",
+        "title": "波の表し方",
+        "sourceLesson": "波の表し方",
+        "sourceGroup": 18,
+        "sourcePage": 7,
+        "goals": [
+          "正弦波の表し方について理解する。",
+          "正弦波の式における位相について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-3-chapter-1-section-3": [
+      {
+        "id": "part-3-chapter-1-section-3-lesson-19-A",
+        "label": "A",
+        "title": "波面と射線",
+        "sourceLesson": "波の伝わり方",
+        "sourceGroup": 19,
+        "sourcePage": 7,
+        "goals": [
+          "平面波や球面波について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-1-section-3-lesson-19-B",
+        "label": "B",
+        "title": "回折",
+        "sourceLesson": "波の伝わり方",
+        "sourceGroup": 19,
+        "sourcePage": 7,
+        "goals": [
+          "波の性質である回折について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-1-section-3-lesson-19-C",
+        "label": "C",
+        "title": "反射",
+        "sourceLesson": "波の伝わり方",
+        "sourceGroup": 19,
+        "sourcePage": 7,
+        "goals": [
+          "波の性質である反射について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-1-section-3-lesson-19-D",
+        "label": "D",
+        "title": "屈折",
+        "sourceLesson": "波の伝わり方",
+        "sourceGroup": 19,
+        "sourcePage": 7,
+        "goals": [
+          "波の性質である屈折について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-1-section-3-lesson-19-E",
+        "label": "E",
+        "title": "ホイヘンスの原理",
+        "sourceLesson": "波の伝わり方",
+        "sourceGroup": 19,
+        "sourcePage": 7,
+        "goals": [
+          "波の進み方を説明したホイヘンスの原理について理解する。",
+          "ホイヘンスの原理を用いた反射の法則や屈折の法則の説明について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-1-section-3-lesson-19-F",
+        "label": "F",
+        "title": "干渉",
+        "sourceLesson": "波の伝わり方",
+        "sourceGroup": 19,
+        "sourcePage": 7,
+        "goals": [
+          "2つの波源から生じた球面波の干渉について、強め合う条件や弱め合う条件を理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-3-chapter-2-section-1": [
+      {
+        "id": "part-3-chapter-2-section-1-lesson-20-A",
+        "label": "A",
+        "title": "音の性質",
+        "sourceLesson": "音の性質",
+        "sourceGroup": 20,
+        "sourcePage": 7,
+        "goals": [
+          "物理基礎で学習した音の反射に加え、音の屈折・回折・干渉について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-3-chapter-2-section-2": [
+      {
+        "id": "part-3-chapter-2-section-2-lesson-21-A",
+        "label": "A",
+        "title": "音源または観測者のどちらかが動く場合",
+        "sourceLesson": "ドップラー効果",
+        "sourceGroup": 21,
+        "sourcePage": 7,
+        "goals": [
+          "ドップラー効果とはどのような現象か理解する。",
+          "音源のみが動く場合のドップラー効果がどのように表されるか理解する。",
+          "観測者が動く場合のドップラー効果がどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-2-section-2-lesson-21-B",
+        "label": "B",
+        "title": "音源と観測者がともに動く場合",
+        "sourceLesson": "ドップラー効果",
+        "sourceGroup": 21,
+        "sourcePage": 8,
+        "goals": [
+          "音源と観測者が動く場合のドップラー効果がどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-2-section-2-lesson-21-C",
+        "label": "C",
+        "title": "音の反射とドップラー効果",
+        "sourceLesson": "ドップラー効果",
+        "sourceGroup": 21,
+        "sourcePage": 8,
+        "goals": [
+          "音が反射するときにもドップラー効果が観測されること、観測者が聞く音の振動数がどのように表されるか理解する。",
+          "風があるときのドップラー効果がどのように表されるか理解する。",
+          "観測者と音源の位置関係が斜めのときに、ドップラー効果がどのように表されるか理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-3-chapter-3-section-1": [
+      {
+        "id": "part-3-chapter-3-section-1-lesson-22-A",
+        "label": "A",
+        "title": "ものが見えるということ",
+        "sourceLesson": "光の伝わり方",
+        "sourceGroup": 22,
+        "sourcePage": 8,
+        "goals": [
+          "可視光線の波長の違いを色の違いとして認識していることについて理解する。",
+          "単色光と白色光の違いについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-1-lesson-22-B",
+        "label": "B",
+        "title": "光の速さ",
+        "sourceLesson": "光の伝わり方",
+        "sourceGroup": 22,
+        "sourcePage": 8,
+        "goals": [
+          "光の速さについて、歴史的な背景とともに理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-1-lesson-22-C",
+        "label": "C",
+        "title": "反射と屈折",
+        "sourceLesson": "光の伝わり方",
+        "sourceGroup": 22,
+        "sourcePage": 8,
+        "goals": [
+          "光の反射と屈折について、反射の法則や屈折の法則が成り立つことを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-1-lesson-22-D",
+        "label": "D",
+        "title": "全反射",
+        "sourceLesson": "光の伝わり方",
+        "sourceGroup": 22,
+        "sourcePage": 8,
+        "goals": [
+          "絶対屈折率がより小さい媒質へ進むときに、全反射が起こることについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-1-lesson-22-E",
+        "label": "E",
+        "title": "分散",
+        "sourceLesson": "光の伝わり方",
+        "sourceGroup": 22,
+        "sourcePage": 8,
+        "goals": [
+          "白色光が屈折率の違いによって波長ごとに分かれることを分散ということ、分かれた色の模様をスペクトルということを理解する。",
+          "スペクトルには連続スペクトルと線スペクトルがあることを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-1-lesson-22-F",
+        "label": "F",
+        "title": "偏光",
+        "sourceLesson": "光の伝わり方",
+        "sourceGroup": 22,
+        "sourcePage": 8,
+        "goals": [
+          "特定の方向に振動する光を偏光ということを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-1-lesson-22-G",
+        "label": "G",
+        "title": "散乱",
+        "sourceLesson": "光の伝わり方",
+        "sourceGroup": 22,
+        "sourcePage": 8,
+        "goals": [
+          "光が微粒子に当たると四方に広がる現象を散乱ということ、空が青く見えたり夕焼けに見えたりする理由が散乱であることを理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-3-chapter-3-section-2": [
+      {
+        "id": "part-3-chapter-3-section-2-lesson-24-A",
+        "label": "A",
+        "title": "レンズを通る光の進み方",
+        "sourceLesson": "レンズと鏡",
+        "sourceGroup": 24,
+        "sourcePage": 9,
+        "goals": [
+          "レンズには凸レンズや凹レンズがあることを知り、光（光線）が入射したときの光の進み方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-2-lesson-24-B",
+        "label": "B",
+        "title": "凸レンズによる像",
+        "sourceLesson": "レンズと鏡",
+        "sourceGroup": 24,
+        "sourcePage": 9,
+        "goals": [
+          "凸レンズによる実像のでき方について理解し、写像公式や倍率について理解する。",
+          "凸レンズによる虚像のでき方について理解する。",
+          "虫眼鏡の倍率について知る。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-2-lesson-24-C",
+        "label": "C",
+        "title": "凹レンズによる像",
+        "sourceLesson": "レンズと鏡",
+        "sourceGroup": 24,
+        "sourcePage": 9,
+        "goals": [
+          "凹レンズによる像のでき方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-2-lesson-24-D",
+        "label": "D",
+        "title": "組み合わせレンズ",
+        "sourceLesson": "レンズと鏡",
+        "sourceGroup": 24,
+        "sourcePage": 9,
+        "goals": [
+          "顕微鏡や望遠鏡のような2枚のレンズを組み合わせている機器について、像のでき方を理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-2-lesson-24-E",
+        "label": "E",
+        "title": "レンズの式",
+        "sourceLesson": "レンズと鏡",
+        "sourceGroup": 24,
+        "sourcePage": 9,
+        "goals": [
+          "レンズについて、レンズから物体までの距離と焦点距離、レンズから像までの距離との関係について理解し、レンズの式や倍率について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-2-lesson-24-F",
+        "label": "F",
+        "title": "平面鏡と球面鏡",
+        "sourceLesson": "レンズと鏡",
+        "sourceGroup": 24,
+        "sourcePage": 9,
+        "goals": [
+          "平面鏡や球面鏡での光の進み方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-2-lesson-24-G",
+        "label": "G",
+        "title": "球面鏡による像",
+        "sourceLesson": "レンズと鏡",
+        "sourceGroup": 24,
+        "sourcePage": 9,
+        "goals": [
+          "凹面鏡による実像、凹面鏡や凸面鏡による虚像のでき方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-2-lesson-24-H",
+        "label": "H",
+        "title": "球面鏡の式",
+        "sourceLesson": "レンズと鏡",
+        "sourceGroup": 24,
+        "sourcePage": 9,
+        "goals": [
+          "球面鏡について、球面鏡から物体までの距離と焦点距離、球面鏡から像までの距離との関係について理解し、球面鏡の式、倍率について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-3-chapter-3-section-3": [
+      {
+        "id": "part-3-chapter-3-section-3-lesson-23-A",
+        "label": "A",
+        "title": "光の回折と干渉",
+        "sourceLesson": "光の回折と干渉",
+        "sourceGroup": 23,
+        "sourcePage": 8,
+        "goals": [
+          "光も波の性質である回折が見られることを理解する。",
+          "ヤングの実験とはどのような実験か知り、光が干渉するときの強め合う条件や弱め合う条件について理解する。",
+          "実験結果を通して、光が回折・干渉していることを確認する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-3-lesson-23-B",
+        "label": "B",
+        "title": "回折格子",
+        "sourceLesson": "光の回折と干渉",
+        "sourceGroup": 23,
+        "sourcePage": 8,
+        "goals": [
+          "回折格子による光の干渉条件について理解する。",
+          "回折格子とはどのようなものか知る。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-3-lesson-23-C",
+        "label": "C",
+        "title": "薄膜による干渉",
+        "sourceLesson": "光の回折と干渉",
+        "sourceGroup": 23,
+        "sourcePage": 8,
+        "goals": [
+          "光が異なる媒質を進むときの速さや位相の変化について理解する。",
+          "光が薄膜に入射するときに干渉する条件について、垂直に入射するときと斜めに入射するときに分けて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-3-chapter-3-section-3-lesson-23-D",
+        "label": "D",
+        "title": "空気層による干渉",
+        "sourceLesson": "光の回折と干渉",
+        "sourceGroup": 23,
+        "sourcePage": 8,
+        "goals": [
+          "光が空気層に入射するときの干渉条件について、くさび型空気層、ニュートンリングを例に理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-1-section-1": [
+      {
+        "id": "part-4-chapter-1-section-1-lesson-25-A",
+        "label": "A",
+        "title": "静電気",
+        "sourceLesson": "静電気力",
+        "sourceGroup": 25,
+        "sourcePage": 9,
+        "goals": [
+          "物理基礎で学習した静電気や原子の構造について復習する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-1-lesson-25-B",
+        "label": "B",
+        "title": "電気量保存の法則",
+        "sourceLesson": "静電気力",
+        "sourceGroup": 25,
+        "sourcePage": 9,
+        "goals": [
+          "物体が帯電するときのしくみやきまりについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-1-lesson-25-C",
+        "label": "C",
+        "title": "クーロンの法則",
+        "sourceLesson": "静電気力",
+        "sourceGroup": 25,
+        "sourcePage": 9,
+        "goals": [
+          "2つの点電荷が及ぼし合う静電気力について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-1-section-2": [
+      {
+        "id": "part-4-chapter-1-section-2-lesson-26-A",
+        "label": "A",
+        "title": "電場（電界）",
+        "sourceLesson": "電場（電界）",
+        "sourceGroup": 26,
+        "sourcePage": 9,
+        "goals": [
+          "電場とは何かについて理解し、電場の表し方や電場中の点電荷が受ける力について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-2-lesson-26-B",
+        "label": "B",
+        "title": "点電荷がつくる電場",
+        "sourceLesson": "電場（電界）",
+        "sourceGroup": 26,
+        "sourcePage": 9,
+        "goals": [
+          "点電荷がつくる電場について理解し、複数の点電荷がある場合の電場の表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-2-lesson-26-C",
+        "label": "C",
+        "title": "電気力線",
+        "sourceLesson": "電場（電界）",
+        "sourceGroup": 26,
+        "sourcePage": 9,
+        "goals": [
+          "電場を表すときに電気力線を用いることができること、電気力線の性質について理解する。",
+          "一様な電場について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-2-lesson-26-D",
+        "label": "D",
+        "title": "電気力線と電場の強さ",
+        "sourceLesson": "電場（電界）",
+        "sourceGroup": 26,
+        "sourcePage": 9,
+        "goals": [
+          "電気力線の本数で電場の強さを表せること（ガウスの法則）を理解し、ガウスの法則が適用できる場合について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-1-section-3": [
+      {
+        "id": "part-4-chapter-1-section-3-lesson-27-A",
+        "label": "A",
+        "title": "静電気力による位置エネルギー",
+        "sourceLesson": "電位",
+        "sourceGroup": 27,
+        "sourcePage": 10,
+        "goals": [
+          "重力による位置エネルギーと比較しながら、静電気力による位置エネルギーについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-3-lesson-27-B",
+        "label": "B",
+        "title": "電位と電位差",
+        "sourceLesson": "電位",
+        "sourceGroup": 27,
+        "sourcePage": 10,
+        "goals": [
+          "電位とは何かについて理解し、電位差の表し方について理解する。",
+          "一様ではない電場中での静電気力がする仕事や静電気力による位置エネルギーについて理解する。",
+          "等電位面（線）と、電気力線、静電気力がする仕事との関係について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-3-lesson-27-C",
+        "label": "C",
+        "title": "点電荷のまわりの電位",
+        "sourceLesson": "電位",
+        "sourceGroup": 27,
+        "sourcePage": 10,
+        "goals": [
+          "点電荷のまわりの電位について理解し、複数の点電荷がある場合の電位の表し方について理解する。",
+          "導電紙を用いて、等電位線を確かめる。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-1-section-4": [
+      {
+        "id": "part-4-chapter-1-section-4-lesson-28-A",
+        "label": "A",
+        "title": "電場の中の導体",
+        "sourceLesson": "物質と電場",
+        "sourceGroup": 28,
+        "sourcePage": 10,
+        "goals": [
+          "導体に帯電体を近づけたときのようす（静電誘導）と電場内に導体を入れたときのようすについて理解する。",
+          "箔検電器を用いて、帯電体の正・負を調べる実験を行う。",
+          "接地や静電遮蔽について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-4-lesson-28-B",
+        "label": "B",
+        "title": "電場の中の不導体",
+        "sourceLesson": "物質と電場",
+        "sourceGroup": 28,
+        "sourcePage": 10,
+        "goals": [
+          "不導体に帯電体を近づけたときのようす（誘電分極）と電場内に不導体を入れたときのようすについて理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-1-section-5": [
+      {
+        "id": "part-4-chapter-1-section-5-lesson-29-A",
+        "label": "A",
+        "title": "電気を蓄える",
+        "sourceLesson": "コンデンサー",
+        "sourceGroup": 29,
+        "sourcePage": 10,
+        "goals": [
+          "コンデンサーの種類や充電・放電のしくみについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-5-lesson-29-B",
+        "label": "B",
+        "title": "コンデンサーの電気容量",
+        "sourceLesson": "コンデンサー",
+        "sourceGroup": 29,
+        "sourcePage": 10,
+        "goals": [
+          "コンデンサーに蓄えられる電気量について理解し、平行板コンデンサーの電気容量について理解する。",
+          "コンデンサーにおける誘電体のはたらきやコンデンサーの耐電圧について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-5-lesson-29-C",
+        "label": "C",
+        "title": "コンデンサーに蓄えられるエネルギー",
+        "sourceLesson": "コンデンサー",
+        "sourceGroup": 29,
+        "sourcePage": 10,
+        "goals": [
+          "コンデンサーに蓄えられるエネルギーについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-1-section-5-lesson-29-D",
+        "label": "D",
+        "title": "コンデンサーの接続",
+        "sourceLesson": "コンデンサー",
+        "sourceGroup": 29,
+        "sourcePage": 10,
+        "goals": [
+          "コンデンサーを直列接続や並列接続したときの電気容量（合成容量）について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-2-section-1": [
+      {
+        "id": "part-4-chapter-2-section-1-lesson-30-A",
+        "label": "A",
+        "title": "電気抵抗の温度変化",
+        "sourceLesson": "電流",
+        "sourceGroup": 30,
+        "sourcePage": 10,
+        "goals": [
+          "物質の抵抗率が温度によって変化することについて理解する。",
+          "電圧と電流が比例しない抵抗（非線形抵抗）について理解する。",
+          "物理基礎で学習した電流の大きさやオームの法則、ジュール熱について、自由電子の運動の視点から理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-2-section-2": [
+      {
+        "id": "part-4-chapter-2-section-2-lesson-31-A",
+        "label": "A",
+        "title": "起電力と電位降下（電圧降下）",
+        "sourceLesson": "直流回路",
+        "sourceGroup": 31,
+        "sourcePage": 11,
+        "goals": [
+          "電気回路における電位と電流の関係について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-2-section-2-lesson-31-B",
+        "label": "B",
+        "title": "キルヒホッフの法則",
+        "sourceLesson": "直流回路",
+        "sourceGroup": 31,
+        "sourcePage": 11,
+        "goals": [
+          "複数の電源や抵抗などからなる回路における法則（キルヒホッフの法則）について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-2-section-2-lesson-31-C",
+        "label": "C",
+        "title": "電池の内部抵抗と端子電圧",
+        "sourceLesson": "直流回路",
+        "sourceGroup": 31,
+        "sourcePage": 11,
+        "goals": [
+          "電池に複数の豆電球（抵抗）を接続すると、電池の端子電圧が小さくなることを知り、端子電圧と電流にはどのような関係があるか調べる実験を計画する。",
+          "実験結果をふまえて、電池には内部抵抗があること、内部抵抗の電位降下分だけ端子電圧が小さくなることを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-2-section-2-lesson-31-D",
+        "label": "D",
+        "title": "電流計・電圧計の内部抵抗",
+        "sourceLesson": "直流回路",
+        "sourceGroup": 31,
+        "sourcePage": 11,
+        "goals": [
+          "電圧計の内部抵抗・電流計や電圧計がどのようにして電流や電圧を測定しているか、その構造やしくみを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-2-section-2-lesson-31-E",
+        "label": "E",
+        "title": "抵抗・起電力の測定",
+        "sourceLesson": "直流回路",
+        "sourceGroup": 31,
+        "sourcePage": 11,
+        "goals": [
+          "起電力の測定・抵抗値や起電力を正確に測定する方法について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-2-section-2-lesson-31-F",
+        "label": "F",
+        "title": "コンデンサーを含む回路",
+        "sourceLesson": "直流回路",
+        "sourceGroup": 31,
+        "sourcePage": 11,
+        "goals": [
+          "直流回路におけるコンデンサーの振る舞いについて理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-2-section-3": [
+      {
+        "id": "part-4-chapter-2-section-3-lesson-31-G",
+        "label": "G",
+        "title": "半導体",
+        "sourceLesson": "直流回路",
+        "sourceGroup": 31,
+        "sourcePage": 11,
+        "goals": [
+          "半導体や半導体を利用した素子について、そのしくみや利用について理解する。",
+          "半導体を利用した素子であるトランジスタについて動作原理や利用のされ方について知る。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-3-section-1": [
+      {
+        "id": "part-4-chapter-3-section-1-lesson-32-A",
+        "label": "A",
+        "title": "磁力（磁気力）と磁気量",
+        "sourceLesson": "磁場（磁界）",
+        "sourceGroup": 32,
+        "sourcePage": 11,
+        "goals": [
+          "磁石にはたらく磁力について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-1-lesson-32-B",
+        "label": "B",
+        "title": "磁場（磁界）の向きと強さ",
+        "sourceLesson": "磁場（磁界）",
+        "sourceGroup": 32,
+        "sourcePage": 11,
+        "goals": [
+          "磁場とは何かについて理解し、磁場の表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-1-lesson-32-C",
+        "label": "C",
+        "title": "磁力線",
+        "sourceLesson": "磁場（磁界）",
+        "sourceGroup": 32,
+        "sourcePage": 11,
+        "goals": [
+          "磁場を表すときに磁力線を用いることができること、磁力線の性質について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-1-lesson-32-D",
+        "label": "D",
+        "title": "磁性の起源",
+        "sourceLesson": "磁場（磁界）",
+        "sourceGroup": 32,
+        "sourcePage": 11,
+        "goals": [
+          "物質が磁性をもつしくみについて理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-3-section-2": [
+      {
+        "id": "part-4-chapter-3-section-2-lesson-33-A",
+        "label": "A",
+        "title": "エルステッドの発見",
+        "sourceLesson": "電流がつくる磁場",
+        "sourceGroup": 33,
+        "sourcePage": 11,
+        "goals": [
+          "エルステッドの実験について知る。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-2-lesson-33-B",
+        "label": "B",
+        "title": "直線状の電流がつくる磁場",
+        "sourceLesson": "電流がつくる磁場",
+        "sourceGroup": 33,
+        "sourcePage": 11,
+        "goals": [
+          "直線状の電流がつくる磁場について理解する。",
+          "サバールの法則・ビオ・サバールの法則を知り、直線状の電流がつくる磁場について理解を深める。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-2-lesson-33-C",
+        "label": "C",
+        "title": "曲線状の電流がつくる磁場",
+        "sourceLesson": "電流がつくる磁場",
+        "sourceGroup": 33,
+        "sourcePage": 11,
+        "goals": [
+          "円形電流やソレノイドを流れる電流のような曲線状の電流がつくる磁場について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-3-section-3": [
+      {
+        "id": "part-4-chapter-3-section-3-lesson-34-A",
+        "label": "A",
+        "title": "電流が磁場から受ける力",
+        "sourceLesson": "電流が磁場から受ける力（電磁力）",
+        "sourceGroup": 34,
+        "sourcePage": 12,
+        "goals": [
+          "磁場中の電流が力を受けることを理解し、右ねじの法則やフレミングの左手の法則について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-3-lesson-34-B",
+        "label": "B",
+        "title": "電磁力を基準として磁場を表す",
+        "sourceLesson": "電流が磁場から受ける力（電磁力）",
+        "sourceGroup": 34,
+        "sourcePage": 12,
+        "goals": [
+          "磁束密度とは何かについて理解し、磁束密度を用いた磁場の表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-3-lesson-34-C",
+        "label": "C",
+        "title": "磁束",
+        "sourceLesson": "電流が磁場から受ける力（電磁力）",
+        "sourceGroup": 34,
+        "sourcePage": 12,
+        "goals": [
+          "磁束密度と磁束の関係について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-3-lesson-34-D",
+        "label": "D",
+        "title": "平行電流が及ぼし合う力",
+        "sourceLesson": "電流が磁場から受ける力（電磁力）",
+        "sourceGroup": 34,
+        "sourcePage": 12,
+        "goals": [
+          "平行電流が及ぼし合う力について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-3-section-4": [
+      {
+        "id": "part-4-chapter-3-section-4-lesson-35-A",
+        "label": "A",
+        "title": "ローレンツ力",
+        "sourceLesson": "ローレンツ力",
+        "sourceGroup": 35,
+        "sourcePage": 12,
+        "goals": [
+          "磁場中を運動する荷電粒子にはたらく力（ローレンツ力）について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-4-lesson-35-B",
+        "label": "B",
+        "title": "磁場中の荷電粒子の運動",
+        "sourceLesson": "ローレンツ力",
+        "sourceGroup": 35,
+        "sourcePage": 12,
+        "goals": [
+          "ローレンツ力を受ける荷電粒子の運動について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-3-section-4-lesson-35-C",
+        "label": "C",
+        "title": "ホール効果",
+        "sourceLesson": "ローレンツ力",
+        "sourceGroup": 35,
+        "sourcePage": 12,
+        "goals": [
+          "磁場中の導体に電流を流したときのホール効果について理解する。",
+          "身のまわりでホール効果の利用例を知る。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-4-section-1": [
+      {
+        "id": "part-4-chapter-4-section-1-lesson-36-A",
+        "label": "A",
+        "title": "電磁誘導",
+        "sourceLesson": "電磁誘導",
+        "sourceGroup": 36,
+        "sourcePage": 12,
+        "goals": [
+          "これまでに学習した電磁誘導について、誘導起電力の大きさや向きはコイルの巻数やコ",
+          "実験結果をふまえて、電磁誘導の法則やコイルに生じる誘導起電力の表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-1-lesson-36-B",
+        "label": "B",
+        "title": "電磁誘導はどのように説明されるか",
+        "sourceLesson": "電磁誘導",
+        "sourceGroup": 36,
+        "sourcePage": 12,
+        "goals": [
+          "電磁誘導が生じる理由をコイルが動く場合と磁石が動く場合に分けて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-1-lesson-36-C",
+        "label": "C",
+        "title": "電磁誘導とエネルギー保存の法則",
+        "sourceLesson": "電磁誘導",
+        "sourceGroup": 36,
+        "sourcePage": 12,
+        "goals": [
+          "電磁誘導とエネルギーの関係について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-1-lesson-36-D",
+        "label": "D",
+        "title": "渦電流",
+        "sourceLesson": "電磁誘導",
+        "sourceGroup": 36,
+        "sourcePage": 12,
+        "goals": [
+          "渦電流について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-4-section-2": [
+      {
+        "id": "part-4-chapter-4-section-2-lesson-37-A",
+        "label": "A",
+        "title": "自己誘導",
+        "sourceLesson": "自己誘導と相互誘導",
+        "sourceGroup": 37,
+        "sourcePage": 12,
+        "goals": [
+          "コイル自身を流れる電流の変化による磁場の変化によって電磁誘導が起こることを理解し、その際の誘導起電力の表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-2-lesson-37-B",
+        "label": "B",
+        "title": "コイルを含む回路",
+        "sourceLesson": "自己誘導と相互誘導",
+        "sourceGroup": 37,
+        "sourcePage": 12,
+        "goals": [
+          "直流回路におけるコイルの振る舞いについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-2-lesson-37-C",
+        "label": "C",
+        "title": "コイルに蓄えられるエネルギー",
+        "sourceLesson": "自己誘導と相互誘導",
+        "sourceGroup": 37,
+        "sourcePage": 12,
+        "goals": [
+          "コイルに蓄えられるエネルギーについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-2-lesson-37-D",
+        "label": "D",
+        "title": "相互誘導",
+        "sourceLesson": "自己誘導と相互誘導",
+        "sourceGroup": 37,
+        "sourcePage": 12,
+        "goals": [
+          "2つのコイルによる相互誘導について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-4-section-3": [
+      {
+        "id": "part-4-chapter-4-section-3-lesson-38-A",
+        "label": "A",
+        "title": "交流",
+        "sourceLesson": "交流",
+        "sourceGroup": 38,
+        "sourcePage": 12,
+        "goals": [
+          "交流電圧の発生のさせ方と表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-4-section-4": [
+      {
+        "id": "part-4-chapter-4-section-4-lesson-38-B",
+        "label": "B",
+        "title": "抵抗と交流",
+        "sourceLesson": "交流",
+        "sourceGroup": 38,
+        "sourcePage": 12,
+        "goals": [
+          "交流回路における抵抗の振る舞いについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-4-lesson-38-C",
+        "label": "C",
+        "title": "コイルと交流",
+        "sourceLesson": "交流",
+        "sourceGroup": 38,
+        "sourcePage": 12,
+        "goals": [
+          "交流回路におけるコイルの振る舞いについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-4-lesson-38-D",
+        "label": "D",
+        "title": "コンデンサーと交流",
+        "sourceLesson": "交流",
+        "sourceGroup": 38,
+        "sourcePage": 13,
+        "goals": [
+          "交流回路におけるコンデンサーの振る舞いについて理解する。",
+          "変圧器の構造と原理について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-4-lesson-38-E",
+        "label": "E",
+        "title": "RLC直列回路",
+        "sourceLesson": "交流",
+        "sourceGroup": 38,
+        "sourcePage": 13,
+        "goals": [
+          "RLC直列回路に交流電圧を加えたときのようすを理解し、インピーダンスやベクトル表記について理解する。",
+          "RLC直列共振回路について理解する。",
+          "RLC並列回路に交流電圧を加えたときのようすを知り、理解を深める。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-4-lesson-38-F",
+        "label": "F",
+        "title": "電気振動",
+        "sourceLesson": "交流",
+        "sourceGroup": 38,
+        "sourcePage": 13,
+        "goals": [
+          "充電されたコンデンサーとコイルを接続したときの電気振動について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-4-chapter-4-section-5": [
+      {
+        "id": "part-4-chapter-4-section-5-lesson-39-A",
+        "label": "A",
+        "title": "誘導電場と誘導磁場",
+        "sourceLesson": "電磁波",
+        "sourceGroup": 39,
+        "sourcePage": 13,
+        "goals": [
+          "誘導電場、誘導磁場について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-5-lesson-39-B",
+        "label": "B",
+        "title": "電磁波の発生",
+        "sourceLesson": "電磁波",
+        "sourceGroup": 39,
+        "sourcePage": 13,
+        "goals": [
+          "電磁波が発生するしくみについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-5-lesson-39-C",
+        "label": "C",
+        "title": "電磁波の性質",
+        "sourceLesson": "電磁波",
+        "sourceGroup": 39,
+        "sourcePage": 13,
+        "goals": [
+          "電磁波の性質について理解する。",
+          "電波発生器と電波検出器を用いて、電波（電磁波）の性質について確かめる。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-4-chapter-4-section-5-lesson-39-D",
+        "label": "D",
+        "title": "電磁波の種類",
+        "sourceLesson": "電磁波",
+        "sourceGroup": 39,
+        "sourcePage": 13,
+        "goals": [
+          "電磁波の種類や波長の違いによる用途について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-1-section-1": [
+      {
+        "id": "part-5-chapter-1-section-1-lesson-40-A",
+        "label": "A",
+        "title": "陰極線",
+        "sourceLesson": "電子",
+        "sourceGroup": 40,
+        "sourcePage": 13,
+        "goals": [
+          "陰極線について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-1-section-1-lesson-40-B",
+        "label": "B",
+        "title": "電子の比電荷",
+        "sourceLesson": "電子",
+        "sourceGroup": 40,
+        "sourcePage": 13,
+        "goals": [
+          "例題を通して、電子の比電荷の求め方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-1-section-1-lesson-40-C",
+        "label": "C",
+        "title": "電気素量",
+        "sourceLesson": "電子",
+        "sourceGroup": 40,
+        "sourcePage": 13,
+        "goals": [
+          "ミリカンの実験を通して、電気素量がどのように求められたか理解する。",
+          "SIの定義定数である電気素量と電子の比電荷（電子の質量）について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-1-section-2": [
+      {
+        "id": "part-5-chapter-1-section-2-lesson-41-A",
+        "label": "A",
+        "title": "光電効果",
+        "sourceLesson": "光の粒子性",
+        "sourceGroup": 41,
+        "sourcePage": 13,
+        "goals": [
+          "光電効果の実験のしくみについて理解し、実験結果と波動性による説明について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-1-section-2-lesson-41-B",
+        "label": "B",
+        "title": "光子（光量子）と光電効果",
+        "sourceLesson": "光の粒子性",
+        "sourceGroup": 41,
+        "sourcePage": 13,
+        "goals": [
+          "光子とは何かについて理解し、光子による光電効果の説明について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-1-section-2-lesson-41-C",
+        "label": "C",
+        "title": "電子ボルト",
+        "sourceLesson": "光の粒子性",
+        "sourceGroup": 41,
+        "sourcePage": 13,
+        "goals": [
+          "光子や電子のエネルギーを表す単位について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-1-section-3": [
+      {
+        "id": "part-5-chapter-1-section-3-lesson-42-A",
+        "label": "A",
+        "title": "X線の発生",
+        "sourceLesson": "X線",
+        "sourceGroup": 42,
+        "sourcePage": 13,
+        "goals": [
+          "X線がどのように発生するか、Xの種類と特徴について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-1-section-3-lesson-42-B",
+        "label": "B",
+        "title": "X線の波動性",
+        "sourceLesson": "X線",
+        "sourceGroup": 42,
+        "sourcePage": 13,
+        "goals": [
+          "X線が結晶で散乱され干渉することを理解し、その強め合う条件（ブラッグの条件）について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-1-section-3-lesson-42-C",
+        "label": "C",
+        "title": "X線の粒子性",
+        "sourceLesson": "X線",
+        "sourceGroup": 42,
+        "sourcePage": 13,
+        "goals": [
+          "X線が粒子性をもつことをコンプトン効果と関連付けて理解する。",
+          "例題を通してコンプトン効果による波長の変化について理解を深める。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-1-section-4": [
+      {
+        "id": "part-5-chapter-1-section-4-lesson-43-A",
+        "label": "A",
+        "title": "物質波と電子線の回折・干渉",
+        "sourceLesson": "波動性と粒子性",
+        "sourceGroup": 43,
+        "sourcePage": 14,
+        "goals": [
+          "干渉・物質をつくる粒子が波動性をもつことを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-1-section-4-lesson-43-B",
+        "label": "B",
+        "title": "量子力学とハイゼンベルクの不確定性原理",
+        "sourceLesson": "波動性と粒子性",
+        "sourceGroup": 43,
+        "sourcePage": 14,
+        "goals": [
+          "粒子性と波動性の二重性を扱う理論形式（量子力学）について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-2-section-1": [
+      {
+        "id": "part-5-chapter-2-section-1-lesson-44-A",
+        "label": "A",
+        "title": "原子核の発見",
+        "sourceLesson": "原子の構造",
+        "sourceGroup": 44,
+        "sourcePage": 14,
+        "goals": [
+          "原子の構造がどのようなものであるかを歴史的な背景をふまえて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-1-lesson-44-B",
+        "label": "B",
+        "title": "水素原子のスペクトル",
+        "sourceLesson": "原子の構造",
+        "sourceGroup": 44,
+        "sourcePage": 14,
+        "goals": [
+          "水素原子のスペクトルについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-1-lesson-44-C",
+        "label": "C",
+        "title": "水素原子のボーア模型",
+        "sourceLesson": "原子の構造",
+        "sourceGroup": 44,
+        "sourcePage": 14,
+        "goals": [
+          "ボーアの仮説について理解する。",
+          "水素原子の軌道半径やエネルギー準位について理解する。",
+          "ボーアの仮説より導出した水素原子のスペクトルが実験結果と一致することを理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-2-section-2": [
+      {
+        "id": "part-5-chapter-2-section-2-lesson-45-A",
+        "label": "A",
+        "title": "原子核の構成",
+        "sourceLesson": "原子核",
+        "sourceGroup": 45,
+        "sourcePage": 14,
+        "goals": [
+          "原子核の構成について理解し、その表し方を理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-2-lesson-45-B",
+        "label": "B",
+        "title": "同位体",
+        "sourceLesson": "原子核",
+        "sourceGroup": 45,
+        "sourcePage": 14,
+        "goals": [
+          "同じ元素でも質量の異なる原子が存在することを理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-2-lesson-45-C",
+        "label": "C",
+        "title": "統一原子質量単位",
+        "sourceLesson": "原子核",
+        "sourceGroup": 45,
+        "sourcePage": 14,
+        "goals": [
+          "原子の質量の表し方について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-2-lesson-45-D",
+        "label": "D",
+        "title": "原子量",
+        "sourceLesson": "原子核",
+        "sourceGroup": 45,
+        "sourcePage": 14,
+        "goals": [
+          "原子量について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-2-section-3": [
+      {
+        "id": "part-5-chapter-2-section-3-lesson-46-A",
+        "label": "A",
+        "title": "原子核の崩壊と放射線",
+        "sourceLesson": "原子核の崩壊",
+        "sourceGroup": 46,
+        "sourcePage": 14,
+        "goals": [
+          "放射線の種類や特徴について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-3-lesson-46-B",
+        "label": "B",
+        "title": "半減期と崩壊系列",
+        "sourceLesson": "原子核の崩壊",
+        "sourceGroup": 46,
+        "sourcePage": 14,
+        "goals": [
+          "放射性原子核の半減期について理解する。",
+          "放射性原子核は安定した原子核になるまで放射性崩壊が連続的に続くこと、また、それらをまとめた系列について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-3-lesson-46-C",
+        "label": "C",
+        "title": "放射線の性質とその利用",
+        "sourceLesson": "原子核の崩壊",
+        "sourceGroup": 46,
+        "sourcePage": 14,
+        "goals": [
+          "放射線の性質と利用について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-2-section-4": [
+      {
+        "id": "part-5-chapter-2-section-4-lesson-47-A",
+        "label": "A",
+        "title": "核反応",
+        "sourceLesson": "核反応と核エネルギー",
+        "sourceGroup": 47,
+        "sourcePage": 14,
+        "goals": [
+          "核反応について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-4-lesson-47-B",
+        "label": "B",
+        "title": "等価性と結合エネルギー",
+        "sourceLesson": "核反応と核エネルギー",
+        "sourceGroup": 47,
+        "sourcePage": 14,
+        "goals": [
+          "エネルギーと質量の等価性について理解する。",
+          "核反応におけるエネルギーについて理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-4-lesson-47-C",
+        "label": "C",
+        "title": "核分裂",
+        "sourceLesson": "核反応と核エネルギー",
+        "sourceGroup": 47,
+        "sourcePage": 15,
+        "goals": [
+          "核分裂について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-4-lesson-47-D",
+        "label": "D",
+        "title": "核融合",
+        "sourceLesson": "核反応と核エネルギー",
+        "sourceGroup": 47,
+        "sourcePage": 15,
+        "goals": [
+          "核融合について理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ],
+    "part-5-chapter-2-section-5": [
+      {
+        "id": "part-5-chapter-2-section-5-lesson-48-A",
+        "label": "A",
+        "title": "物質の階層構造",
+        "sourceLesson": "素粒子",
+        "sourceGroup": 48,
+        "sourcePage": 15,
+        "goals": [
+          "物質の構成要素について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-5-lesson-48-B",
+        "label": "B",
+        "title": "素粒子の分類",
+        "sourceLesson": "素粒子",
+        "sourceGroup": 48,
+        "sourcePage": 15,
+        "goals": [
+          "素粒子の種類や性質について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-5-lesson-48-C",
+        "label": "C",
+        "title": "4つの基本的な力",
+        "sourceLesson": "素粒子",
+        "sourceGroup": 48,
+        "sourcePage": 15,
+        "goals": [
+          "自然界に存在する基本的な４つの力について、その力を媒介する粒子とともに理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-5-lesson-48-D",
+        "label": "D",
+        "title": "素粒子の反応",
+        "sourceLesson": "素粒子",
+        "sourceGroup": 48,
+        "sourcePage": 15,
+        "goals": [
+          "素粒子の反応について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-5-lesson-48-E",
+        "label": "E",
+        "title": "標準模型",
+        "sourceLesson": "素粒子",
+        "sourceGroup": 48,
+        "sourcePage": 15,
+        "goals": [
+          "標準模型という素粒子理論について理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-5-chapter-2-section-5-lesson-48-F",
+        "label": "F",
+        "title": "素粒子と宇宙",
+        "sourceLesson": "素粒子",
+        "sourceGroup": 48,
+        "sourcePage": 15,
+        "goals": [
+          "宇宙の始まりから素粒子の誕生、基本的な力の進化について宇宙の進化モデルをもとに理解する。"
+        ],
+        "origin": "syllabus"
+      }
+    ]
+  }
+}

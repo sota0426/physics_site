@@ -1,11 +1,12 @@
 import React from 'react';
 import {ArrowDown, ChevronRight, Compass, Sparkles} from 'lucide-react';
 import SectionTerms from './SectionTerms';
+import {SubunitList} from './Subunits';
 
 const numerals=['','一','二','三','四','五'];
 export const chapterLabel=chapter=>`第${numerals[chapter.number]}章　${chapter.title}`;
 
-export default function CurriculumMap({part,color,onSelect,extension}) {
+export default function CurriculumMap({part,color,onSelect,extension,notes=[]}) {
   const count=part.chapters.reduce((sum,chapter)=>sum+chapter.sections.length,0);
   return <section className="map-panel curriculum-map" style={{'--field':color}} aria-label={`${part.title}の学習マップ`}>
     <div className="map-heading"><div><span className="chapter">第{numerals[part.number]}編 / {part.title}</span><h2>小さなセクションから、理解を深めよう。</h2></div><span className="unit-count">{part.chapters.length}章・{count}セクション</span></div>
@@ -19,6 +20,7 @@ export default function CurriculumMap({part,color,onSelect,extension}) {
           <span className="section-copy"><span className="section-kicker">セクション{section.number}</span><strong>{section.number}.{section.title}</strong><span className="section-depths"><span>1 わかる</span><span>2 使える</span><span>3 説明できる</span></span></span>
           <ChevronRight className="section-arrow" size={18}/>
         </button>
+        <SubunitList sectionId={section.id} notes={notes}/>
         <SectionTerms sectionId={section.id}/>
       </React.Fragment>)}</div>
     </section>)}
