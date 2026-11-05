@@ -13,18 +13,75 @@ function appendScript(output,type,value){
  output.push(grouped?`${grouped[1]}${marker}{${grouped[2]}\\,${value}}`:`${tail}${marker}{${value}}`);
 }
 
+function fractionsToLatex(value){
+ let result=value,index=0;
+ const findFractionSlash=(start)=>{
+  let braceDepth=0;
+  for(let position=start;position<result.length;position++){
+   if(result[position]==='{')braceDepth++;
+   else if(result[position]==='}')braceDepth--;
+   else if(result[position]==='/'&&braceDepth===0)return position;
+  }
+  return -1;
+ };
+ while((index=findFractionSlash(index))!==-1){
+  let left=index-1;
+  while(left>=0&&/\s/.test(result[left]))left--;
+  let braceDepth=0,parenDepth=0;
+  for(;left>=0;left--){
+   const char=result[left];
+   if(char==='}')braceDepth++; else if(char==='{')braceDepth--;
+   else if(char===')')parenDepth++; else if(char==='(')parenDepth--;
+   if(braceDepth===0&&parenDepth===0&&/[=+\-,]/.test(char))break;
+  }
+  const numeratorStart=left+1;
+  const numerator=result.slice(numeratorStart,index).trim();
+  let right=index+1;
+  while(right<result.length&&/\s/.test(result[right]))right++;
+  let denominatorEnd=right,denominator='';
+  if(result[right]==='('){
+   let depth=1;denominatorEnd=right+1;
+   while(denominatorEnd<result.length&&depth){
+    if(result[denominatorEnd]==='(')depth++;
+    if(result[denominatorEnd]===')')depth--;
+    denominatorEnd++;
+   }
+   denominator=result.slice(right+1,denominatorEnd-1).trim();
+  }else{
+   braceDepth=0;parenDepth=0;
+   while(denominatorEnd<result.length){
+    const char=result[denominatorEnd];
+    if(char==='{')braceDepth++; else if(char==='}')braceDepth--;
+    else if(char==='(')parenDepth++; else if(char===')')parenDepth--;
+    if(braceDepth===0&&parenDepth===0&&/[=+\-,]/.test(char))break;
+    denominatorEnd++;
+   }
+   denominator=result.slice(right,denominatorEnd).trim();
+  }
+  if(!numerator||!denominator){index++;continue;}
+  const fraction=`\\frac{${numerator}}{${denominator}}`;
+  result=result.slice(0,numeratorStart)+fraction+result.slice(denominatorEnd);
+  index=numeratorStart+fraction.length;
+ }
+ return result;
+}
+
 export function expressionToLatex(expression){
+ // 数式内の単位は「［m］」「［m/s］」のように全角の角括弧で明示する。
  const source=expression
+  .replace(/［([^］]+)］/g,'\\mathrm{［$1］}')
   .replace(/√\{([^{}]+)\}/g,'\\sqrt{$1}')
   .replace(/([A-Za-z])⃗([A-Z])→([A-Z])/g,'\\vec{$1}_{$2\\to $3}')
+  .replace(/([A-Za-z])⃗([A-Z])/g,'\\vec{$1}_{$2}')
   .replace(/([A-Za-z])⃗([぀-ヿ㐀-鿿]+)/g,'\\vec{$1}_{\\mathrm{$2}}')
   .replace(/([A-Za-z])⃗/g,'\\vec{$1}')
   .replace(/\bsin\b/g,'\\sin ')
-  .replace(/\bcos\b/g,'\\cos ');
+  .replace(/\bcos\b/g,'\\cos ')
+  .replace(/\btan\b/g,'\\tan ');
  const output=[];
  for(let i=0;i<source.length;){
   if(source[i]==='\\'){
-   const match=source.slice(i).match(/^\\(?:vec|mathrm)\{[^}]+\}(?:_\{[^}]+\})?|^\\(?:sin|cos)\s?/);
+   const match=source.slice(i).match(/^\\(?:vec|mathrm)\{[^}]+\}(?:_\{[^}]+\})?|^\\(?:sin|cos|tan)\s?/);
    if(match){output.push(match[0]);i+=match[0].length;continue;}
   }
   if(subscript[source[i]]){
@@ -46,7 +103,14 @@ export function expressionToLatex(expression){
   }
   output.push(commands[source[i]]??source[i]);i++;
  }
- return output.join('').replace(/\^\(([^)]+)\)/g,'^{$1}');
+ return fractionsToLatex(output.join('').replace(/\^\(([^)]+)\)/g,'^{$1}'));
+}
+
+const inlineEquation=/([A-Za-z0-9ΔΣΦμρπωθφηλνεℓℰ⃗₀-₉ₐ-ₜᵥₓ⁰-⁹⁻⁺ⁿ′½⟨⟩|()\[\]{}·×÷+\-−/.,\s]+[=≤≥≈][A-Za-z0-9ΔΣΦμρπωθφηλνεℓℰ⃗₀-₉ₐ-ₜᵥₓ⁰-⁹⁻⁺ⁿ′½⟨⟩|()\[\]{}·×÷+\-−/.,\s]+)/g;
+
+export function MathText({children}){
+ const text=String(children??'');
+ return text.split(inlineEquation).filter(Boolean).map((part,index)=>/[=≤≥≈]/.test(part)?<MathFormula key={index} expression={part.trim()}/>:part);
 }
 
 export default function MathFormula({expression,className='',display=false}){

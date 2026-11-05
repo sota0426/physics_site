@@ -7,6 +7,19 @@
   },
   "sections": {
     "part-1-chapter-1-section-1": [
+    {
+      "id": "part-1-chapter-1-section-1-lesson-1-vector",
+      "label": "準備",
+      "title": "ベクトルの基礎",
+      "sourceLesson": "平面内の運動",
+      "sourceGroup": 1,
+      "sourcePage": 1,
+      "goals": [
+        "ベクトルが大きさと向きをもつ量であることを理解する。",
+        "物理的な移動を用いて、ベクトルの足し算と引き算を図で考えられる。"
+      ],
+      "origin": "foundation"
+    },
       {
         "id": "part-1-chapter-1-section-1-lesson-1-A",
         "label": "A",
@@ -30,6 +43,20 @@
           "平面内を運動している物体のようすを表すのに必要な物理量のうち、速度（平均の速度、瞬間の速度）について理解する。"
         ],
         "origin": "syllabus"
+      },
+      {
+        "id": "part-1-chapter-1-section-1-lesson-1-uniform",
+        "label": "B+",
+        "title": "等速直線運動",
+        "sourceLesson": "平面内の運動",
+        "sourceGroup": 1,
+        "sourcePage": 1,
+        "goals": [
+          "速度が一定の運動を、x=x₀+vtで表せる。",
+          "合力が0なら加速度が0となり、静止または等速直線運動を続けることを理解する。",
+          "力がはたらかない場合と、複数の力がつり合う場合を区別できる。"
+        ],
+        "origin": "foundation"
       },
       {
         "id": "part-1-chapter-1-section-1-lesson-1-C",
