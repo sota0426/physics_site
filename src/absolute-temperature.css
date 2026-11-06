@@ -1,0 +1,444 @@
+.absolute-step .boyle-charles-dialogue {
+  background: linear-gradient(145deg, #edf4f8, #fff);
+}
+.absolute-step .charles-law-board { grid-template-columns: 1fr 1fr; }
+
+.charles-observation {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr 1.25fr;
+  align-items: center;
+  gap: 24px;
+  padding: 30px;
+  background: linear-gradient(135deg, #eaf3f1, #fff8e9);
+  border-top: 1px solid #d8e3dc;
+}
+
+.charles-observation > b {
+  color: #6f806f;
+  font-size: 10px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.balloon-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #35604b;
+  font-weight: 900;
+}
+
+.balloon-state > span { font-size: 10px; }
+
+.balloon-state > i {
+  position: relative;
+  display: block;
+  width: 92px;
+  height: 108px;
+  border: 5px solid #517965;
+  border-radius: 50% 50% 46% 46%;
+  background: #dce9e3;
+  box-shadow: inset 0 -15px 0 #b8d0c4;
+}
+
+.balloon-state > i::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -19px;
+  width: 3px;
+  height: 18px;
+  background: #8c6a3b;
+}
+
+.balloon-state.hot > i {
+  width: 132px;
+  height: 150px;
+  border-color: #ba7c2b;
+  background: #f3dca9;
+  box-shadow: inset 0 -18px 0 #e2bf72;
+}
+
+.observation-note {
+  display: flex;
+  min-height: 180px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  border: 2px solid #9eb6a5;
+  border-radius: 20px;
+  background: #fffef9;
+  color: #31543f;
+  text-align: center;
+}
+
+.observation-note small {
+  color: #768f7c;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.observation-note strong { font-size: 16px; line-height: 1.55; }
+.observation-note p { margin: 0; color: #738076; font-size: 9px; line-height: 1.75; }
+
+.temperature-origin-graph {
+  margin: 0;
+  padding: 26px 28px 30px;
+  border-bottom: 1px solid #d6e1de;
+  background: linear-gradient(145deg, #edf6f5, #fffaf0);
+}
+
+.temperature-origin-graph figcaption { margin-bottom: 18px; }
+.temperature-origin-graph figcaption small {
+  color: #367363;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+}
+.temperature-origin-graph figcaption h4 {
+  margin: 6px 0 5px;
+  color: #2f4f42;
+  font-size: 18px;
+}
+.temperature-origin-graph figcaption p {
+  margin: 0;
+  color: #728177;
+  font-size: 9px;
+}
+
+.temperature-graph-panels {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 84px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 15px;
+}
+
+.temperature-graph-panel {
+  overflow: hidden;
+  border: 2px solid #b9cec4;
+  border-radius: 20px;
+  background: #fffefa;
+  box-shadow: 0 8px 20px #31574412;
+}
+.temperature-graph-panel > strong {
+  display: block;
+  padding: 14px 16px 0;
+  color: #365d4a;
+  font-size: 11px;
+}
+.temperature-graph-panel svg { display: block; width: 100%; height: auto; }
+.temperature-graph-panel svg text {
+  fill: #425f52;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 800;
+}
+.temperature-graph-panel svg .graph-note { fill: #a36c22; font-size: 17px; }
+.temperature-graph-panel svg .graph-note.muted { fill: #73877d; font-size: 15px; }
+.temperature-axis { fill: none; stroke: #617b6d; stroke-width: 4; stroke-linecap: round; }
+.temperature-law-line { fill: none; stroke: #bd7c27; stroke-width: 8; stroke-linecap: round; }
+.temperature-law-line.extension { stroke-dasharray: 13 11; opacity: .72; }
+.temperature-guide { fill: none; stroke: #90a99d; stroke-width: 3; stroke-dasharray: 8 8; }
+.temperature-point { fill: #fff; stroke: #bd7c27; stroke-width: 6; }
+.temperature-point.small { stroke-width: 5; }
+.kelvin-panel { border-color: #d2b36f; }
+.kelvin-panel .temperature-law-line { stroke: #356f5a; }
+.kelvin-panel .temperature-point { stroke: #356f5a; }
+
+.graph-equation {
+  min-height: 118px;
+  padding: 0 18px 18px;
+  color: #315744;
+  text-align: center;
+}
+.graph-equation .math-formula { font-size: 19px; }
+.graph-equation p {
+  margin: 9px 0 0;
+  color: #6f7e74;
+  font-size: 9px;
+  line-height: 1.8;
+}
+
+.origin-shift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #8b6427;
+  text-align: center;
+}
+.origin-shift span { font-size: 9px; font-weight: 900; line-height: 1.55; }
+.origin-shift b { font-size: 30px; }
+.origin-shift small { color: #77867c; font-size: 8px; line-height: 1.5; }
+
+.absolute-temperature-picture,
+.temperature-volume-picture {
+  margin: 0;
+  padding: 26px 28px 30px;
+  border-bottom: 1px solid #d6e1de;
+  background: linear-gradient(145deg, #edf6f5, #fffaf0);
+}
+.absolute-temperature-picture figcaption,
+.temperature-volume-picture figcaption { margin-bottom: 18px; }
+.absolute-temperature-picture figcaption small,
+.temperature-volume-picture figcaption small {
+  color: #367363;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+}
+.absolute-temperature-picture figcaption h4,
+.temperature-volume-picture figcaption h4 {
+  margin: 6px 0 5px;
+  color: #2f4f42;
+  font-size: 18px;
+}
+.absolute-temperature-picture figcaption p,
+.temperature-volume-picture figcaption p {
+  margin: 0;
+  color: #728177;
+  font-size: 9px;
+  line-height: 1.8;
+}
+.absolute-picture-frame {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #bdd0c6;
+  border-radius: 22px;
+  background: #fffdf6;
+  box-shadow: 0 10px 24px #31574416;
+}
+.absolute-picture-frame > img { display: block; width: 100%; height: auto; }
+.absolute-picture-frame.piston-only { aspect-ratio: 2048 / 790; }
+.absolute-picture-frame.piston-only > img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.gas-state-caption,.picture-scale-label {
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 2px solid #fff;
+  border-radius: 13px;
+  background: #fffdf5eF;
+  box-shadow: 0 4px 13px #27453625;
+  color: #315744;
+  text-align: center;
+}
+.gas-state-caption { top: 3%; width: 24%; min-height: 48px; padding: 7px 8px; flex-direction: column; }
+.gas-state-caption strong { font-size: 9px; }
+.gas-state-caption .math-formula,.gas-state-caption span { font-size: 10px; }
+.state-cold { left: 5%; border-color: #9bbdca; }
+.state-zero { left: 38%; border-color: #9bbcac; }
+.state-warm { right: 5%; border-color: #d9b46a; }
+
+.temperature-volume-picture { background: #fffdf8; }
+.temperature-volume-art {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #cfdbd2;
+  border-radius: 22px;
+  background: #fffaf0;
+  box-shadow: 0 10px 24px #31574416;
+}
+.temperature-volume-art > img { display: block; width: 100%; height: auto; }
+.graph-panel-title,.graph-label {
+  position: absolute;
+  z-index: 1;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background: #fffdf5ed;
+  box-shadow: 0 4px 12px #27453620;
+  color: #315744;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.graph-panel-title {
+  top: 4.5%;
+  padding: 7px 12px;
+  font-size: 10px;
+}
+.graph-panel-title .math-formula { margin-left: 4px; font-size: 11px; }
+.graph-title-c { left: 5%; border-color: #8bc8b8; }
+.graph-title-k { left: 55%; border-color: #e3bd70; }
+.graph-label { padding: 4px 7px; font-size: 9px; }
+.graph-c-volume { left: 19%; top: 17%; }
+.graph-c-zero { left: 19%; top: 49%; }
+.graph-c-limit { left: 3%; top: 73%; }
+.graph-k-volume { left: 52.5%; top: 17%; }
+.graph-k-origin { left: 54.5%; top: 73%; }
+.graph-k-zero { left: 77%; top: 43%; }
+.absolute-proof-flow {
+  margin-top: 16px;
+  padding: 22px 26px 25px;
+  border: 2px solid #c7d6cd;
+  border-radius: 20px;
+  background: #fffefa;
+  box-shadow: 0 8px 20px #31574412;
+  color: #315744;
+}
+.absolute-proof-flow > header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 17px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #dbe4de;
+}
+.absolute-proof-flow > header small {
+  color: #9b702f;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.absolute-proof-flow > header strong { font-size: 15px; }
+.absolute-proof-flow > section {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: start;
+  gap: 14px;
+}
+.absolute-proof-flow > section > b {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: #367363;
+  color: #fff;
+  font-size: 12px;
+}
+.absolute-proof-flow > section > div { min-width: 0; text-align: center; }
+.absolute-proof-flow > section small {
+  display: block;
+  margin-bottom: 6px;
+  color: #587164;
+  font-size: 9px;
+  font-weight: 900;
+}
+.absolute-proof-flow > section .math-formula { font-size: 18px; }
+.absolute-proof-flow > section p {
+  margin: 7px 0;
+  color: #6f7e74;
+  font-size: 9px;
+  line-height: 1.75;
+}
+.absolute-proof-flow > section > div > strong {
+  display: block;
+  margin-top: 11px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #edf5ef;
+  color: #285c48;
+  font-size: 10px;
+}
+.absolute-proof-flow > i {
+  display: block;
+  width: 32px;
+  margin: 5px 0 5px;
+  color: #b17d2f;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+}
+.absolute-zero-note {
+  margin: 0 27px 25px;
+  padding: 14px 17px;
+  border-left: 4px solid #7fa493;
+  border-radius: 0 12px 12px 0;
+  background: #eef5f1;
+  color: #526b5e;
+}
+.absolute-zero-note b { font-size: 9px; color: #315744; }
+.absolute-zero-note p { margin: 5px 0 0; font-size: 9px; line-height: 1.75; }
+.absolute-picture-formulas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 16px;
+}
+.absolute-picture-formulas.proof-steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.absolute-picture-formulas > div {
+  padding: 16px;
+  border: 2px solid #c4d4cc;
+  border-radius: 16px;
+  background: #fffefa;
+  color: #315744;
+  text-align: center;
+}
+.absolute-picture-formulas > div:last-child { border-color: #d9bd7e; }
+.absolute-picture-formulas small { color: #75877d; font-size: 8px; font-weight: 900; }
+.absolute-picture-formulas .math-formula { font-size: 18px; }
+.absolute-picture-formulas p { margin: 7px 0 0; color: #6f7e74; font-size: 8px; line-height: 1.7; }
+.absolute-picture-formulas .kelvin-formula-card .math-formula + .math-formula {
+  display: block;
+  margin-top: 9px;
+}
+.absolute-picture-formulas .kelvin-definition-card .math-formula + .math-formula {
+  display: block;
+  margin-top: 9px;
+}
+.absolute-picture-formulas.proof-steps .math-formula { font-size: 16px; }
+.absolute-picture-formulas > span {
+  align-self: center;
+  max-width: 72px;
+  color: #97661f;
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.55;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .charles-observation { grid-template-columns: 1fr auto 1fr; }
+  .observation-note { grid-column: 1 / -1; min-height: auto; }
+  .temperature-graph-panels { grid-template-columns: 1fr; }
+  .origin-shift { flex-direction: row; padding: 2px 0; }
+  .origin-shift span br { display: none; }
+  .origin-shift b { transform: rotate(90deg); font-size: 24px; }
+  .absolute-picture-formulas { grid-template-columns: 1fr; }
+  .absolute-picture-formulas.proof-steps { grid-template-columns: 1fr; }
+  .absolute-picture-formulas > span { max-width: none; }
+}
+
+@media (max-width: 560px) {
+  .charles-observation { gap: 12px; padding: 22px 14px; }
+  .balloon-state > i { width: 68px; height: 82px; }
+  .balloon-state.hot > i { width: 96px; height: 112px; }
+  .observation-note strong { font-size: 14px; }
+  .temperature-origin-graph { padding: 21px 14px 24px; }
+  .temperature-origin-graph figcaption h4 { font-size: 16px; }
+  .temperature-graph-panel svg .graph-note { font-size: 19px; }
+  .graph-equation { min-height: 0; }
+  .absolute-temperature-picture,
+  .temperature-volume-picture { padding: 21px 14px 24px; }
+  .absolute-temperature-picture figcaption h4,
+  .temperature-volume-picture figcaption h4 { font-size: 16px; }
+  .gas-state-caption { width: 27%; min-height: 42px; padding: 5px 4px; }
+  .gas-state-caption strong { font-size: 7px; }
+  .gas-state-caption .math-formula,.gas-state-caption span { font-size: 8px; }
+  .state-cold { left: 3%; }.state-zero { left: 36.5%; }.state-warm { right: 3%; }
+  .graph-panel-title { padding: 5px 7px; font-size: 7px; }
+  .graph-panel-title .math-formula { font-size: 8px; }
+  .graph-label { padding: 3px 5px; font-size: 7px; }
+  .absolute-proof-flow { padding: 18px 13px 20px; }
+  .absolute-proof-flow > header { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .absolute-proof-flow > section { grid-template-columns: 28px 1fr; gap: 8px; }
+  .absolute-proof-flow > section > b { width: 27px; height: 27px; }
+  .absolute-proof-flow > section .math-formula { font-size: 15px; }
+  .absolute-proof-flow > i { width: 27px; }
+  .absolute-zero-note { margin: 0 14px 20px; }
+  .absolute-step .charles-law-board { grid-template-columns: 1fr; }
+}

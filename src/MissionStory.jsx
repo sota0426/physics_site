@@ -113,8 +113,8 @@ function VelocityStory({story,dialogue}){
  return <section className="velocity-story">
   <header className="velocity-story-intro"><span className="mission-number"><MapPin size={14}/>{story.number}</span><h2>{dialogue.title}</h2><p>{story.setting}</p></header>
   <section className="velocity-topic velocity-topic-line" aria-labelledby="line-velocity-title"><header><span>物理基礎</span><div><small>STRAIGHT-LINE VELOCITY</small><h3 id="line-velocity-title">一直線上の速度</h3><p>一つの軸の上では、正負の符号で向きを表す。</p></div></header><div className="velocity-topic-body"><div className="velocity-topic-dialogue"><DialogueTurns turns={lineTurns}/></div><MissionDiagram type="velocity" title="一直線上の速度"/></div></section>
-  <section className="velocity-topic velocity-topic-plane" aria-labelledby="plane-velocity-title"><header><span>物理</span><div><small>VELOCITY IN A PLANE</small><h3 id="plane-velocity-title">平面上の速度</h3><p>二つの軸を用意し、斜めの速度をx成分とy成分へ分ける。</p></div><a className="trig-guide-link" href="#/trigonometry">sin・cosが初めてなら<br/><b>三角関数の準備ページへ</b><ArrowRight size={16}/></a></header><div className="velocity-topic-body"><div className="velocity-topic-dialogue"><DialogueTurns turns={planeTurns} startIndex={5}/></div><VelocityDecompositionFigure/></div></section>
-  <div className="dialogue-takeaway velocity-story-takeaway"><small>二人がつかんだこと</small><strong>{dialogue.takeaway}</strong></div>
+  <section className="velocity-topic velocity-topic-plane" aria-labelledby="plane-velocity-title"><header><span>物理</span><div><small>VELOCITY IN A PLANE</small><h3 id="plane-velocity-title">平面上の速度</h3><p>成分表示と速さ・角度表示を、目的に応じて使い分ける。</p></div><a className="trig-guide-link" href="#/trigonometry">sin・cosが初めてなら<br/><b>三角関数の準備ページへ</b><ArrowRight size={16}/></a></header><div className="velocity-topic-body"><div className="velocity-topic-dialogue"><DialogueTurns turns={planeTurns} startIndex={5}/></div><VelocityDecompositionFigure/></div></section>
+  <div className="dialogue-takeaway velocity-story-takeaway"><small>二人がつかんだこと</small><strong><DialogueText>{dialogue.takeaway}</DialogueText></strong></div>
  </section>;
 }
 

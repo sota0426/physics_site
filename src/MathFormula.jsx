@@ -81,7 +81,7 @@ export function expressionToLatex(expression){
  const output=[];
  for(let i=0;i<source.length;){
   if(source[i]==='\\'){
-   const match=source.slice(i).match(/^\\(?:vec|mathrm)\{[^}]+\}(?:_\{[^}]+\})?|^\\(?:sin|cos|tan)\s?/);
+   const match=source.slice(i).match(/^\\(?:vec|mathrm)\{[^}]+\}(?:_\{[^}]+\})?|^\\(?:sin|cos|tan)\s?|^\\(?:frac|dfrac|tfrac|text|bar|overline|sqrt|left|right|cdot|mathrm)/);
    if(match){output.push(match[0]);i+=match[0].length;continue;}
   }
   if(subscript[source[i]]){

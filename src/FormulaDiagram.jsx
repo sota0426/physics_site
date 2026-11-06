@@ -20,7 +20,7 @@ function Linear({id}){
 }
 
 function Fluid({id}){
- if(id==='pressure')return <><rect x="180" y="115" width="190" height="105" rx="12" className="fd-object"/><rect x="155" y="220" width="240" height="18" className="fd-surface"/>{arrow('M275 45V108','F⊥',290,75,true)}<path d="M180 255H370" className="fd-line measure"/><text x="268" y="277">面積 S</text><text x="240" y="165">押す物体</text></>;
+ if(id==='pressure')return <><rect x="180" y="115" width="190" height="105" rx="12" className="fd-object"/><rect x="155" y="220" width="240" height="18" className="fd-surface"/>{arrow('M275 45V108','F',290,75,true)}<path d="M180 255H370" className="fd-line measure"/><text x="268" y="277">面積 S</text><text x="240" y="165">押す物体</text></>;
  if(id==='hydrostatic')return <><path d="M105 45V255H445V45" className="fd-container"/><rect x="108" y="90" width="334" height="162" className="fd-water"/><path d="M90 90H460" className="fd-line"/><path d="M300 90V220" className="fd-line measure"/><text x="315" y="160">深さ h</text><text x="120" y="78">水面 p₀</text>{arrow('M300 220H405','p',355,207,true)}<text x="125" y="235">密度 ρ</text></>;
  return <><path d="M105 45V255H445V45" className="fd-container"/><rect x="108" y="105" width="334" height="147" className="fd-water"/><rect x="220" y="75" width="110" height="120" rx="16" className="fd-object"/>{arrow('M275 135V42','F浮',290,70)}{arrow('M275 135V240','mg',290,220,true)}<text x="130" y="230">ρ流体</text><text x="337" y="180">V排除</text></>;
 }

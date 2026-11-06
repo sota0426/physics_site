@@ -3,6 +3,7 @@ import {ArrowDown, ChevronDown, ChevronRight, Compass, Crown, Sparkles} from 'lu
 import SectionTerms from './SectionTerms';
 import {SubunitList,subunitsFor} from './Subunits';
 import KnowledgeTree from './KnowledgeTree';
+import ThermodynamicsTree from './ThermodynamicsTree';
 import {completedConcepts} from './learning-progress';
 
 const numerals=['','一','二','三','四','五'];
@@ -18,7 +19,7 @@ export default function CurriculumMap({part,color,onSelect,extension,notes=[]}) 
   return <section className="map-panel curriculum-map" style={{'--field':color}} aria-label={`${part.title}の学習マップ`}>
     {part.chapters.map((chapter,chapterIndex)=>{const isOpen=Boolean(openChapters[chapter.id]);const chapterUnits=chapter.sections.flatMap(section=>subunitsFor(section.id));const doneCount=chapterUnits.filter(unit=>completed.has(unit.id)).length;const progress=chapterUnits.length?Math.round(doneCount/chapterUnits.length*100):0;const isComplete=progress===100;return <section className={`chapter-block ${isOpen?'open':'closed'} ${isComplete?'complete':''}`} key={chapter.id} aria-labelledby={chapter.id}>
       <button className="chapter-banner" aria-expanded={isOpen} aria-controls={`${chapter.id}-content`} aria-label={`${chapterLabel(chapter)}、進捗${progress}パーセント`} onClick={()=>toggleChapter(chapter.id)}><span className="chapter-number">{isComplete?<Crown size={22}/>:String(chapter.number).padStart(2,'0')}</span><span className="chapter-heading"><h3 id={chapter.id}>{chapterLabel(chapter)}</h3><span className={`chapter-progress ${isComplete?'complete':''}`}><span className="chapter-progress-label">{isComplete?<><Crown size={13}/>完了</>:`${progress}%`}</span><span className="chapter-progress-track"><i style={{width:`${progress}%`}}/></span></span></span><ChevronDown className="chapter-chevron" size={20}/></button>
-      {isOpen&&<div className="chapter-content" id={`${chapter.id}-content`}>{chapter.id==='part-1-chapter-1'?<KnowledgeTree chapter={chapter} part={part} notes={notes}/>:<div className="section-path">{chapter.sections.map((section,index)=><React.Fragment key={section.id}>
+      {isOpen&&<div className="chapter-content" id={`${chapter.id}-content`}>{chapter.id==='part-1-chapter-1'?<KnowledgeTree chapter={chapter} part={part} notes={notes}/>:chapter.id.startsWith('part-2-chapter-')?<ThermodynamicsTree chapter={chapter} notes={notes}/>:<div className="section-path">{chapter.sections.map((section,index)=><React.Fragment key={section.id}>
         {index>0&&<div className="section-connector" aria-hidden="true"><ArrowDown size={15}/></div>}
         <button className={`section-stop ${chapterIndex===0&&index===0?'first-section':''}`} onClick={()=>onSelect({chapter,section,part})}>
           <span className="section-node">{chapterIndex===0&&index===0?<Compass size={23}/>:String(section.number).padStart(2,'0')}</span>

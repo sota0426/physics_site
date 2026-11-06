@@ -145,31 +145,66 @@
         {
           "id": "part-2-chapter-1",
           "number": 1,
-          "title": "気体のエネルギーと状態変化",
-          "hours": 9,
-          "sourceCell": "B24",
+          "title": "熱の基礎",
+          "hours": 4,
+          "sourceCell": "physics-basics",
           "sections": [
             {
               "id": "part-2-chapter-1-section-1",
               "number": 1,
+              "title": "物理基礎で学ぶ熱",
+              "objectives": "温度と熱運動、熱量の保存、物質の状態変化、熱の利用を振り返り、物理の熱力学へ進むための土台をつくる。",
+              "experiments": "熱平衡、混合法、状態変化の観察",
+              "sourceCell": "physics-basics"
+            }
+          ]
+        },
+        {
+          "id": "part-2-chapter-2",
+          "number": 2,
+          "title": "圧力および気体の法則",
+          "hours": 2,
+          "sourceCell": "B25",
+          "sections": [
+            {
+              "id": "part-2-chapter-2-section-1",
+              "number": 1,
               "title": "気体の法則",
-              "objectives": "ボイル・シャルルの法則から，理想気体の状態方程式が得られることを示す。",
+              "objectives": "気体の圧力を確認し、ボイル・シャルルの法則から理想気体の状態方程式へ進む。",
               "experiments": "実験17　ボイルの法則",
               "sourceCell": "B25"
-            },
+            }
+          ]
+        },
+        {
+          "id": "part-2-chapter-3",
+          "number": 3,
+          "title": "気体分子の運動",
+          "hours": 2,
+          "sourceCell": "B26",
+          "sections": [
             {
-              "id": "part-2-chapter-1-section-2",
-              "number": 2,
+              "id": "part-2-chapter-3-section-1",
+              "number": 1,
               "title": "気体分子の運動",
-              "objectives": "気体分子の運動を力学的に扱って気体の圧力を表す式を導く。この式と理想気体の状態方程式とから，気体分子の平均運動エネルギーが絶対温度に比例することを導く。",
+              "objectives": "分子の衝突から圧力を導き、絶対温度と平均運動エネルギーを結び、気体の内部エネルギーへ進む。",
               "experiments": "",
               "sourceCell": "B26"
-            },
+            }
+          ]
+        },
+        {
+          "id": "part-2-chapter-4",
+          "number": 4,
+          "title": "気体の状態変化",
+          "hours": 5,
+          "sourceCell": "B27",
+          "sections": [
             {
-              "id": "part-2-chapter-1-section-3",
-              "number": 3,
-              "title": "気体の状態変化",
-              "objectives": "理想気体の内部エネルギーは分子の運動エネルギーの総和である。前節で得られた平均運動エネルギーと絶対温度の関係式から，内部エネルギーが絶対温度に比例することを理解させる。\n熱現象をも含めたエネルギー保存則として熱力学第一法則を扱い，気体の状態変化における熱，仕事及び内部エネルギーの関係を理解させる。この熱力学第一法則の式を用いて，定積変化，定圧変化，等温変化，断熱変化を理解させる。関連して，サイクルの熱効率や熱力学第二法則にも触れる。\n＜ドリル＞でさまざまな状態変化のグラフを読み取ることができるように演習させる。",
+              "id": "part-2-chapter-4-section-1",
+              "number": 1,
+              "title": "気体の状態変化と熱機関",
+              "objectives": "熱力学第一法則を用いて気体の仕事と四つの状態変化を整理し、モル熱容量、熱効率、熱力学第二法則へ進む。",
               "experiments": "実験18　断熱変化\n実験19　スターリングエンジンの製作",
               "sourceCell": "B27"
             }

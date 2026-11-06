@@ -542,7 +542,61 @@
     ],
     "part-2-chapter-1-section-1": [
       {
-        "id": "part-2-chapter-1-section-1-lesson-14-A",
+        "id": "part-2-chapter-1-section-1-basics-A",
+        "label": "A",
+        "title": "熱と温度",
+        "sourceLesson": "物理基礎の熱",
+        "sourceGroup": 13,
+        "sourcePage": 5,
+        "goals": [
+          "温度と熱を区別し、温度を物質をつくる粒子の熱運動と関連付けて理解する。",
+          "熱平衡と絶対温度について理解する。"
+        ],
+        "origin": "physics-basics"
+      },
+      {
+        "id": "part-2-chapter-1-section-1-basics-B",
+        "label": "B",
+        "title": "熱量の保存",
+        "sourceLesson": "物理基礎の熱",
+        "sourceGroup": 13,
+        "sourcePage": 5,
+        "goals": [
+          "熱容量と比熱を用いて、物体が受け取る熱量を求める。",
+          "外部との熱の出入りがないとき、失った熱量と受け取った熱量が等しいことを理解する。"
+        ],
+        "origin": "physics-basics"
+      },
+      {
+        "id": "part-2-chapter-1-section-1-basics-C",
+        "label": "C",
+        "title": "物質の状態変化",
+        "sourceLesson": "物理基礎の熱",
+        "sourceGroup": 13,
+        "sourcePage": 5,
+        "goals": [
+          "融解・蒸発などの状態変化と潜熱を理解する。",
+          "加熱中でも状態変化の間は温度が一定になる理由を、エネルギーの使われ方から考える。"
+        ],
+        "origin": "physics-basics"
+      },
+      {
+        "id": "part-2-chapter-1-section-1-basics-D",
+        "label": "D",
+        "title": "熱の利用と熱力学第一法則",
+        "sourceLesson": "物理基礎の熱",
+        "sourceGroup": 13,
+        "sourcePage": 5,
+        "goals": [
+          "熱と仕事がともにエネルギーの移動を表すことを理解する。",
+          "熱力学第一法則をエネルギー保存の考え方として捉え、熱機関の基本を理解する。"
+        ],
+        "origin": "physics-basics"
+      }
+    ],
+    "part-2-chapter-2-section-1": [
+      {
+        "id": "part-2-chapter-2-section-1-lesson-14-A",
         "label": "A",
         "title": "気体の圧力",
         "sourceLesson": "気体の性質",
@@ -554,7 +608,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-1-lesson-14-B",
+        "id": "part-2-chapter-2-section-1-lesson-14-B",
         "label": "B",
         "title": "ボイル・シャルルの法則",
         "sourceLesson": "気体の性質",
@@ -568,7 +622,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-1-lesson-14-C",
+        "id": "part-2-chapter-2-section-1-lesson-14-C",
         "label": "C",
         "title": "理想気体の状態方程式",
         "sourceLesson": "気体の性質",
@@ -581,9 +635,9 @@
         "origin": "syllabus"
       }
     ],
-    "part-2-chapter-1-section-2": [
+    "part-2-chapter-3-section-1": [
       {
-        "id": "part-2-chapter-1-section-2-lesson-15-A",
+        "id": "part-2-chapter-3-section-1-lesson-15-A",
         "label": "A",
         "title": "気体分子の運動と圧力",
         "sourceLesson": "気体分子の運動と状態方程式",
@@ -595,7 +649,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-2-lesson-15-B",
+        "id": "part-2-chapter-3-section-1-lesson-15-B",
         "label": "B",
         "title": "気体分子の運動と絶対温度",
         "sourceLesson": "気体分子の運動と状態方程式",
@@ -608,7 +662,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-2-lesson-15-C",
+        "id": "part-2-chapter-3-section-1-lesson-15-C",
         "label": "C",
         "title": "気体分子の運動と気体の内部エネルギー",
         "sourceLesson": "気体分子の運動と状態方程式",
@@ -621,9 +675,9 @@
         "origin": "syllabus"
       }
     ],
-    "part-2-chapter-1-section-3": [
+    "part-2-chapter-4-section-1": [
       {
-        "id": "part-2-chapter-1-section-3-lesson-16-A",
+        "id": "part-2-chapter-4-section-1-lesson-16-A",
         "label": "A",
         "title": "熱力学第1法則",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
@@ -635,7 +689,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-3-lesson-16-B",
+        "id": "part-2-chapter-4-section-1-lesson-16-B",
         "label": "B",
         "title": "気体のする仕事",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
@@ -648,7 +702,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-3-lesson-16-C",
+        "id": "part-2-chapter-4-section-1-lesson-16-C",
         "label": "C",
         "title": "熱力学第1法則と気体の状態変化",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
@@ -660,7 +714,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-3-lesson-16-D",
+        "id": "part-2-chapter-4-section-1-lesson-16-D",
         "label": "D",
         "title": "気体のモル熱容量",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
@@ -673,7 +727,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-3-lesson-16-E",
+        "id": "part-2-chapter-4-section-1-lesson-16-E",
         "label": "E",
         "title": "気体の状態変化のまとめ",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
@@ -685,7 +739,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-3-lesson-17-A",
+        "id": "part-2-chapter-4-section-1-lesson-17-A",
         "label": "A",
         "title": "熱力学第2法則と熱効率",
         "sourceLesson": "熱力学第2法則と熱機関",
@@ -697,7 +751,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-3-lesson-17-B",
+        "id": "part-2-chapter-4-section-1-lesson-17-B",
         "label": "B",
         "title": "熱力学第2法則と可逆変化、不可逆変化",
         "sourceLesson": "熱力学第2法則と熱機関",
@@ -709,7 +763,7 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-1-section-3-lesson-17-C",
+        "id": "part-2-chapter-4-section-1-lesson-17-C",
         "label": "C",
         "title": "熱力学第2法則の別の表し方",
         "sourceLesson": "熱力学第2法則と熱機関",
