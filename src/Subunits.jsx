@@ -10,6 +10,7 @@ import VectorBasicsLesson from './VectorBasicsLesson';
 import GasPressureLesson from './GasPressureLesson';
 import BoyleCharlesLesson from './BoyleCharlesLesson';
 import IdealGasLesson from './IdealGasLesson';
+import MolecularKineticTheoryLesson from './MolecularKineticTheoryLesson';
 import MathFormula from './MathFormula';
 import SotaCharacter from './SotaCharacter';
 import {completeConcept} from './learning-progress';
@@ -71,7 +72,7 @@ export default function SubunitLesson({sectionId,unitId,notes,onSave,onMap,quizO
  const [level,setLevel]=useState(1),[reflection,setReflection]=useState(''),[saved,setSaved]=useState(false);
  useEffect(()=>{setLevel(1);setReflection('');setSaved(false)},[unitId]);
  if(!unit||!context)return <section className="workspace-panel"><h1>小単元が見つかりません。</h1><a className="secondary" href="#/map">冒険マップへ戻る</a></section>;
- const index=units.findIndex(u=>u.id===unitId),previous=units[index-1],next=units[index+1],isVectorBasics=unit.id==='part-1-chapter-1-section-1-lesson-1-vector',isDisplacement=unit.id==='part-1-chapter-1-section-1-lesson-1-A',isGasPressure=unit.id==='part-2-chapter-2-section-1-lesson-14-A',isBoyleCharles=unit.id==='part-2-chapter-2-section-1-lesson-14-B',isIdealGas=unit.id==='part-2-chapter-2-section-1-lesson-14-C';
+ const index=units.findIndex(u=>u.id===unitId),previous=units[index-1],next=units[index+1],isVectorBasics=unit.id==='part-1-chapter-1-section-1-lesson-1-vector',isDisplacement=unit.id==='part-1-chapter-1-section-1-lesson-1-A',isGasPressure=unit.id==='part-2-chapter-2-section-1-lesson-14-A',isBoyleCharles=unit.id==='part-2-chapter-2-section-1-lesson-14-B',isIdealGas=unit.id==='part-2-chapter-2-section-1-lesson-14-C',isMolecularPressure=unit.id==='part-2-chapter-3-section-1-lesson-15-A';
  const prompts=[`「${unit.title}」で、何が変わり、何が変わらないか。具体的な場面を一つ挙げて考えよう。`,`「${unit.title}」に関係する量・式・単位を挙げよう。式を使える条件と、量を変えたときの結果も確かめよう。`,`「${unit.title}」を初めて学ぶ人へ、理由と具体例をつなげて説明しよう。既習事項のどれを使ったかも添えよう。`];
  const isQuizPage=quizOnly||window.location.hash.startsWith('#/quiz/');
  if(isQuizPage)return <article className="term-page subunit-lesson quiz-page" key={`${unit.id}-quiz`}>
@@ -82,8 +83,8 @@ export default function SubunitLesson({sectionId,unitId,notes,onSave,onMap,quizO
  return <article className="term-page subunit-lesson" key={unit.id}>
   <button className="back-link back-button" onClick={()=>onMap(context.part.id)}> <ArrowLeft size={15}/>この分野のマップへ</button>
   <p className="term-breadcrumb">{context.part.title} ／ {context.chapter.title} ／ セクション{context.section.number} {context.section.title}</p>
-  <header className="term-title lesson-title"><h1><span className="subunit-letter">{unit.label}</span>{unit.title}</h1><p>{isVectorBasics?'変位を学ぶ前に、矢印の意味と計算の考え方をつかむ。':isDisplacement?'変位と移動距離を、落とし物の場所から考える。':'二人の会話から、考え方を見つける。'}</p></header>
-  {isVectorBasics?<VectorBasicsLesson/>:isDisplacement?<DisplacementDialogue/>:isGasPressure?<GasPressureLesson/>:isBoyleCharles?<BoyleCharlesLesson/>:isIdealGas?<IdealGasLesson/>:<MissionStory unit={unit}/>}
+  <header className="term-title lesson-title"><h1><span className="subunit-letter">{unit.label}</span>{unit.title}</h1><p>{isVectorBasics?'変位を学ぶ前に、矢印の意味と計算の考え方をつかむ。':isDisplacement?'変位と移動距離を、落とし物の場所から考える。':isMolecularPressure?'分子1個の衝突から、気体全体の圧力を組み立てる。':'二人の会話から、考え方を見つける。'}</p></header>
+  {isVectorBasics?<VectorBasicsLesson/>:isDisplacement?<DisplacementDialogue/>:isGasPressure?<GasPressureLesson/>:isBoyleCharles?<BoyleCharlesLesson/>:isIdealGas?<IdealGasLesson/>:isMolecularPressure?<MolecularKineticTheoryLesson/>:<MissionStory unit={unit}/>}
   <a className="quiz-launch" href={quizHref(sectionId,unit)}><span><small>説明を読み終えたら</small><strong>確認問題に進む</strong></span><ArrowRight size={22}/></a>
   <SectionTerms sectionId={sectionId}/>
   <section className="subunit-reflection"><h2>３つの深さで振り返る</h2><p>用語解説を参考に考え、授業で確かめたことを記録しよう。</p><div className="level-choice">{levels.map((name,i)=><button key={name} className={level===i+1?'chosen':''} onClick={()=>{setLevel(i+1);setReflection('');setSaved(false)}}>LEVEL {i+1}<b>{name}</b>{notes.some(n=>n.unitId===unit.id&&n.level===i+1)&&<span className="reflection-check"><Check size={12}/>記録あり</span>}</button>)}</div><p className="reflection-prompt">{prompts[level-1]}</p><label>自分の考え・気づき<textarea value={reflection} onChange={e=>{setReflection(e.target.value);setSaved(false)}} placeholder="分かったことと、まだ分からないことの両方を残せます。"/></label><button className="primary" disabled={!reflection.trim()} onClick={()=>{if(onSave({kind:'subunit',unitId:unit.id,title:unit.title,unitLabel:unit.label,sectionTitle:context.section.title,level,reflection:reflection.trim(),date:new Date().toLocaleDateString('ja-JP')}))setSaved(true)}}><BookOpen size={16}/>この小単元のノートに保存</button><p className="subunit-save-status" role="status">{saved?'保存しました。学びのノートから読み返せます。':'振り返りの記録です。正答や習得を自動判定するものではありません。'}</p></section>
