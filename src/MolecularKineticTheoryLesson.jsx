@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import MathFormula from './MathFormula';
 import SotaCharacter from './SotaCharacter';
+import forceTimeEqualImpulseImage from './assets/force-time-equal-impulse-ai.png';
+import molecularMotionSymmetryImage from './assets/molecular-motion-symmetry-ai-v2.png';
 import './molecular-kinetic-theory.css';
 
 function RichText({children}){
@@ -120,14 +122,14 @@ function CollisionCountQuiz(){
  const restart=()=>{setAnswers([]);setStep(0);};
  return <div className="collision-count-quiz">
   <figure className="count-collision-figure"><div className="count-figure-canvas"><img src="/assets/repeated-wall-collisions-ai.png" alt="同じ粒子が距離Lの区間を何度も往復し、右側の壁へ繰り返し衝突する図"/><span className="count-goal">Δt 秒間の衝突回数を求める</span><span className="count-length"><b>壁の間隔</b><MathFormula expression="L"/></span><span className="count-speed"><b>粒子の速さ</b><MathFormula expression="v_x"/></span><span className="count-time"><b>観測時間</b><MathFormula expression="Δt"/></span></div></figure>
-  <div className="concept-dialogue-turn owl strong count-intro"><img src="/assets/vector-owl.png" alt="案内役のフクロウ"/><div><p>ステップ2だ。今度は、決められた時間の中で同じ壁へ何回ぶつかるかを、二つの問いで求めるぞ。</p></div></div>
+  <div className="concept-dialogue-turn owl strong count-intro"><img src="/assets/vector-owl.png" alt="案内役のフクロウ"/><div><p>次は、決められた時間の中で同じ壁へ何回ぶつかるかを、二つの問いで求めるぞ。</p></div></div>
   <div className="impulse-history">{visibleQuestions.map((question,questionIndex)=>{const selected=answers[questionIndex];const answered=selected!==undefined;const active=questionIndex===step&&!finished;return <section className="impulse-exchange" key={question.owl}><div className="impulse-question-number">【質問{questionIndex+1}】</div><div className="concept-dialogue-turn owl strong impulse-question"><img src="/assets/vector-owl.png" alt="案内役のフクロウ"/><div><p><RichText>{question.owl}</RichText></p></div></div><div className="concept-dialogue-turn ryota impulse-choices"><SotaCharacter/><div><b className="choice-prompt">リョウタのセリフを選ぼう</b>{question.choices.map((choice,index)=>{const state=answered?(index===question.correct?'correct':index===selected?'wrong':'muted'):'';return <button className={state} type="button" onClick={()=>choose(questionIndex,index)} disabled={!active||answered} key={choice}><RichText>{choice}</RichText></button>})}</div></div>{answered&&<div className="impulse-feedback"><img src="/assets/vector-owl.png" alt=""/><p><RichText>{question.feedback}</RichText></p>{active&&<button type="button" onClick={next}>{questionIndex===questions.length-1?'結論を見る':'次の問いへ'}</button>}</div>}</section>})}</div>
   {finished&&<div className="impulse-final count-final"><small>Δt 秒間に、同じ壁へ衝突する回数</small><MathFormula expression="n_{衝突}=\frac{v_xΔt}{2L}" display/><p>総移動距離 <MathFormula expression="v_xΔt"/> を、1往復の距離 <MathFormula expression="2L"/> で割った。</p><button type="button" onClick={restart}>もう一度考える</button></div>}
  </div>;
 }
 
 function ForceTimeGraph(){
- return <figure className="force-time-graph"><svg viewBox="0 0 760 330" role="img" aria-label="衝突の瞬間に鋭いピークが現れる実際の力と、時間でならした平均の力を重ねたF-tグラフ"><defs><linearGradient id="average-force-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#d89a36" stopOpacity=".46"/><stop offset="1" stopColor="#d89a36" stopOpacity=".16"/></linearGradient></defs><line x1="66" y1="282" x2="728" y2="282" className="graph-axis"/><line x1="66" y1="282" x2="66" y2="34" className="graph-axis"/><path d="M66 282 L135 282 L145 64 L155 282 L276 282 L286 45 L296 282 L417 282 L427 72 L437 282 L558 282 L568 52 L578 282 L728 282" className="force-spikes"/><rect x="66" y="260" width="662" height="22" rx="4" fill="url(#average-force-fill)"/><line x1="66" y1="260" x2="728" y2="260" className="average-force-line"/><text x="32" y="39">F</text><text x="720" y="310">t</text><text x="82" y="251" className="average-label">平均の力</text><text x="120" y="88" className="spike-label">衝突の瞬間だけ大きな力</text><text x="580" y="279" className="quiet-label">ほぼ 0</text></svg><figcaption><span><b>実際の力</b>衝突時だけ鋭いピークが立つ</span><span><b>平均の力</b>同じ力積になるよう、時間全体へ長方形としてならす</span></figcaption></figure>;
+ return <figure className="force-time-graph"><div className="force-time-image-wrap"><img src={forceTimeEqualImpulseImage} alt="一つのF-tグラフに、4回の衝突力の山と時間でならした平均力の長方形を重ねた図"/><span className="graph-title">実際の衝突力と、時間でならした平均の力</span><span className="graph-axis-label force"><MathFormula expression="F"/></span><span className="graph-axis-label time"><MathFormula expression="t"/></span><span className="average-force-tick"><MathFormula expression="F_{平均}"/></span><span className="graph-callout one-collision"><b>1つの山</b><small>1回の衝突で壁が受ける力積</small><MathFormula expression="2mv_x"/></span><span className="graph-callout collision-count"><small><MathFormula expression="Δt"/> 秒間の衝突回数</small><MathFormula expression="\frac{v_xΔt}{2L}"/></span><span className="average-force-label">黄色の高さ＝時間でならした平均の力</span><span className="graph-interval"><small>観測した時間</small><MathFormula expression="Δt"/></span><span className="equal-impulse-label">青い山の面積の合計 ＝ 黄色い長方形の面積 ＝ 力積の合計</span></div></figure>;
 }
 
 
@@ -145,14 +147,22 @@ function CollisionVisual(){
 }
 
 function DirectionVisual(){
- return <div className="direction-visual" aria-label="分子速度をx、y、zの3方向へ分ける図"><div className="direction-axis"><i/><span className="dir-x"><MathFormula expression="v_x"/></span><span className="dir-y"><MathFormula expression="v_y"/></span><span className="dir-z"><MathFormula expression="v_z"/></span><strong><MathFormula expression="v"/></strong></div><div className="direction-equality"><MathFormula expression="\overline{v_x^2}=\overline{v_y^2}=\overline{v_z^2}=\frac13\overline{v^2}" display/><p>分子は特定の方向に偏らず、三方向へ同じように運動する。</p></div></div>;
+ return <div className="direction-visual" aria-label="三平方の定理と運動方向に偏りがないことから、速さとx方向速度の二乗平均の関係を導く図">
+  <figure className="direction-illustration"><img src={molecularMotionSymmetryImage} alt="立方体容器内で多数の分子が全方向へ偏りなく運動し、一つの速度を三方向の成分に分けて考える図"/><span className="dir-v"><MathFormula expression="v"/></span><span className="dir-x"><MathFormula expression="v_x"/></span><span className="dir-y"><MathFormula expression="v_y"/></span><span className="dir-z"><MathFormula expression="v_z"/></span></figure>
+  <div className="direction-reasoning">
+   <section><b>情報1　三平方の定理</b><MathFormula expression="v^2=v_x^2+v_y^2+v_z^2" display/><small>三方向の成分から、分子の速さを表す。</small></section>
+   <section><b>情報2　全方向に偏りなし</b><MathFormula expression="\overline{v_x^2}=\overline{v_y^2}=\overline{v_z^2}" display/><small>多数の分子を平均すると、三方向の運動は等しい。</small></section>
+   <i>二つの情報を合わせる</i>
+   <section className="direction-result"><MathFormula expression="\overline{v^2}=3\overline{v_x^2}" display/><i className="direction-therefore">ゆえに</i><MathFormula expression="\overline{v_x^2}=\frac13\overline{v^2}" display/></section>
+  </div>
+ </div>;
 }
 
 function FormulaBridge(){
  return <section className="kinetic-formula-bridge"><div><small>分子の衝突から得た式</small><MathFormula expression="pV=\frac13Nm\overline{v^2}" display/></div><i>形を変える</i><div className="energy-form"><small>分子1個の平均運動エネルギーが見える</small><MathFormula expression="pV=\frac23N\left(\frac12m\overline{v^2}\right)" display/></div></section>;
 }
 
-export default function MolecularKineticTheoryLesson(){
+export default function MolecularKineticTheoryLesson({page='dawn'}){
  const introTurns=[
   ['ryota','状態方程式 [[pV=nRT]] があれば、圧力も体積も計算できるよね。わざわざ見えない分子まで考える必要ある？'],
   ['owl','式で温度や圧力が「どう変化するか」は分かっても、そもそも「なぜ圧力が生まれるのか」「温度とは何なのか」は説明できていない。このままでいいわけないだろ。'],
@@ -206,7 +216,7 @@ export default function MolecularKineticTheoryLesson(){
   ['owl','その通り。作用・反作用で、壁は反対向きに大きさ [[2mv_x]] の運動量を受け取る。壁を押す力の材料は、これだ。']
  ];
  const averageForceTurns=[
-  ['ryota','ステップ1で、1回の衝突によって壁が受ける力積は [[2mv_x]]。ステップ2で、[[Δt]] 秒間の衝突回数は [[\\frac{v_xΔt}{2L}]] だったね。'],
+  ['ryota','前の二段階で、1回の衝突によって壁が受ける力積は [[2mv_x]]、[[Δt]] 秒間の衝突回数は [[\\frac{v_xΔt}{2L}]] と求めたね。'],
   ['owl','その二つを掛ければ、[[Δt]] 秒間に壁が受ける力積の合計になる。[[I_{合計}=2mv_x×\\frac{v_xΔt}{2L}=\\frac{mv_x^2}{L}Δt]] だ。'],
   ['ryota','でも実際の力は、衝突の瞬間だけ大きくて、それ以外はほぼ0なんだよね。グラフにすると、かなりギザギザだ。'],
   ['owl','そうだ。だが、その複雑な力を一瞬ごとに追う必要はない。グラフの面積、つまり力積が同じになるように、時間全体へ長方形としてならす。これが平均の力だ。'],
@@ -215,27 +225,65 @@ export default function MolecularKineticTheoryLesson(){
  ];
  const manyTurns=[
   ['ryota','でも実際には分子が大量にあるよ。全部の速度を足すの？'],
-  ['owl','力は足せる。ただし速度そのものではなく、式に現れた [[v_x^2]] を足す。[[F=m/L(v_{1x}^2+v_{2x}^2+…+v_{Nx}^2)]] だ。'],
-  ['ryota','長すぎる。これを毎回書くのは嫌だ。'],
-  ['owl','だから平均を使う。[[\\overline{v_x^2}]] を「x方向の速度の二乗の平均」とすれば、和は [[N\\overline{v_x^2}]] と書ける。圧力は力を面積 [[L^2]] で割るから、[[p=Nm\\overline{v_x^2}/V]] だ。']
+  ['owl','一粒子が壁へ及ぼす平均の力は [[F_i=\\frac{mv_{ix}^2}{L}]] だった。粒子ごとに力が違うから、まずは合力を [[F_{合計}=F_1+F_2+\\cdots+F_N=\\frac{mv_{1x}^2}{L}+\\frac{mv_{2x}^2}{L}+\\cdots+\\frac{mv_{Nx}^2}{L}]] となる。'],
+  ['ryota','どの項にも [[\\frac{m}{L}]] が共通している。'],
+  ['owl','まず共通する [[\\frac{m}{L}]] をくくり出す。すると、[[F_{合計}=\\frac{m}{L}\\left(v_{1x}^2+v_{2x}^2+\\cdots+v_{Nx}^2\\right)]] となる。ここでは、すべての項に共通する部分を外へ出しただけだ。'],
+  ['ryota','くくったことで、「速度の二乗を全部足す部分」がはっきり分かれたね。でも、まだ長い。'],
+  ['owl','そこで次に、括弧内の長い足し算を総和記号 [[\\sum]] （シグマ）でまとめる。[[F_{合計}=\\frac{m}{L}\\sum_{i=1}^{N}v_{ix}^2]] だ。[[\\sum_{i=1}^{N}]] は「[[i=1]] 番目から [[N]] 番目まで、後ろの [[v_{ix}^2]] をすべて足す」という意味だ。'],
+  ['ryota','シグマって記号で見た目を騙してるけど、結局全ての分子の分を足し算しなくちゃいけないんだろ？　こんなの、どうやって計算するの？　もう終わりじゃん。絶望。'],
+  ['owl','そうだ、ちゃんと計算しようとするとここで終わってしまう。そこで「平均」という裏技を使うんだ。つまり、それぞれの速度を知らなくても、「速度の平均」を分かったふりして使ってしまおう、というわけだ。例えば、クラス全員の体重の総量は、一人ずつ足さなくても「平均体重×人数」で表せるだろ？'],
+  ['ryota','ああ。平均体重が [[55\\,\\mathrm{kg}]] で [[30]] 人なら、体重の総量は [[55\\times30=1650\\,\\mathrm{kg}]] だね。つまり「値の合計＝平均×個数」か。'],
+  ['ryota','じゃあ、分子の速度 [[v_x]] を普通に平均すればいいってこと？'],
+  ['owl','考えは合っている。でも、「平均」というのはプラスマイナスがある値には注意が必要だ。右向きを正、左向きを負にすると、例えば [[+4]] と [[-4]] の平均は [[\\frac{4+(-4)}{2}=0]] になる。二つの分子はどちらも勢いよく動いているのに、「平均速度は0だから力も0」ではおかしいだろ？'],
+  ['ryota','向きが反対だと、普通の平均では打ち消し合ってしまうのか。'],
+  ['owl','そうだ。そこで速度を先に二乗する。[[ (+4)^2=16 ]]、[[ (-4)^2=16 ]] だから、向きが反対でも運動の大きさは消えない。これを「二乗してから平均する」、これを「二乗平均」といって、統計において大きさのみを扱う際に使う技なんだ。'],
+  ['ryota','「速度を平均してから二乗する」なら [[\\left(\\overline{v_x}\\right)^2]]。でも今使うのはそれではなく、[[\\overline{v_x^2}]] なんだね。横線が [[v_x^2]] 全体にかかっているから、「一つずつ二乗してから、その平均をとる」という意味か。'],
+  ['owl','その通り。式に現れているのも [[v_x]] ではなく [[v_x^2]] だからな。[[\\overline{v_x^2}]] を「x方向の速度の二乗平均」とすれば、[[v_{1x}^2+v_{2x}^2+\\cdots+v_{Nx}^2=N\\overline{v_x^2}]] とまとめられる。'],
+  ['ryota','だから合力は [[F_{合計}=\\frac{Nm\\overline{v_x^2}}{L}]] になるんだ。とてもスッキリした形になった！'],
+  ['owl','その通り。そして、最後に圧力を求めようか。[[p=\\frac{F}{S}]]だから、合力[[F_{合計}]] を壁の面積 [[L^2]] で割る。箱の体積は [[V=L^3]] だから、[[p=\\frac{F_{合計}}{L^2}=\\frac{Nm\\overline{v_x^2}}{L^3}=\\frac{Nm\\overline{v_x^2}}{V}]] となる。'],
+  ['ryota','圧力が表現できた。これで完成だ！　長かったぜ。'],
+  ['owl','いや、まだ x軸の運動しか考えてないだろ。最後はこれを３次元に拡張するぞ。']
  ];
  const directionTurns=[
-  ['ryota','急にx方向だけで気体全部の圧力を決めていいの？　分子は上下や奥行きにも飛んでいるよ。'],
-  ['owl','いいところに目をつけたな。分子はx・y・zのどれか一方向だけへ偏っていない。三方向へ同じように運動すると考える。'],
-  ['ryota','全体の速さは [[v^2=v_x^2+v_y^2+v_z^2]]。三方向が平等なら、x方向の分は全体の3分の1になるのか。'],
-  ['owl','その通り。[[\\overline{v_x^2}=\\frac13\\overline{v^2}]] を代入すれば、ついに [[pV=\\frac13Nm\\overline{v^2}]]。目に見える圧力を、見えない分子の質量と運動で表せた。']
+  ['ryota','x軸だけで考えた式を、三次元へ拡張するってどうやるの？　また、めちゃくちゃ難しい計算をするんじゃないだろうね。'],
+  ['owl','身構えるな。ここは驚くほど簡単だ。物理でよく利用する「対称性」という考え方を使う。'],
+  ['ryota','対称性？　図形が左右対称、とかの話？'],
+  ['owl','発想は同じだ。容器の中には、分子がx方向だけを特別に好む理由がない。右と左、上と下、手前と奥はどれも対等だろう。だから全体を平均すれば、x・y・z方向の運動も同じになる。これが方向についての対称性だ。'],
+  ['ryota','一個ずつの分子は好き勝手な方向へ飛ぶけど、大量に集めて見ると、どの方向にも偏っていないと考えるんだね。'],
+  ['owl','そうだ。その対称性と三平方の定理、この二つだけで三次元へ拡張できる。まず速度をx・y・z方向へ分解すると、分子一個の速さについて [[v^2=v_x^2+v_y^2+v_z^2]] が成り立つ。'],
+  ['ryota','平面なら [[v^2=v_x^2+v_y^2]] だったけど、三次元だから奥行きの [[v_z^2]] も足すんだね。'],
+  ['owl','そうだ。これを多数の分子について平均すれば、[[\\overline{v^2}=\\overline{v_x^2}+\\overline{v_y^2}+\\overline{v_z^2}]] となる。これが一つ目の情報だ。'],
+  ['ryota','でも、右辺にはまだx・y・zの三種類が残っているよ。'],
+  ['owl','そこで二つ目の情報、「全方向に偏りがない」を使う。容器の中で、分子がx方向だけを特別に好む理由はない。だから多数の分子を見れば、[[\\overline{v_x^2}=\\overline{v_y^2}=\\overline{v_z^2}]] と考えられる。'],
+  ['ryota','てか、本当に偏りがないの？　重力が働いているんだから、分子だって下向きに力を受けるんじゃないの？'],
+  ['owl','それは最初の前提条件で伝えただろ。重力は実際に働いている。だから厳密に見れば、上下まで完全に同じとは限らない。'],
+  ['ryota','じゃあ「全方向に偏りなし」って、うそじゃん。'],
+  ['owl','モデルを単純にするための近似だ。分子の熱運動は非常に速く、普通の大きさの容器を横切る短い時間では、重力が速度を変える量はごく小さい。また原子一個の質量が小さいので、容器内の高さの差による重力の位置エネルギーも、熱運動のエネルギーに比べて小さい。だから今回は重力の影響を無視し、三方向は対等だと考える。'],
+  ['ryota','重力が存在しないと言っているんじゃなくて、今考えたい分子の熱運動に比べれば影響が小さいから省いているんだね。'],
+  ['owl','そういうことだ。現実を丸ごと入れるのではなく、結果をほとんど変えない小さな効果をいったん外す。これも物理でよく使う考え方だ。'],
+  ['ryota','三つが同じなら、さっきの式の右辺は [[\\overline{v_x^2}]] が三個あるのと同じだ。'],
+  ['owl','その通り。二つの情報を合わせると、[[\\overline{v^2}=3\\overline{v_x^2}]]。したがって、[[\\overline{v_x^2}=\\frac13\\overline{v^2}]] だ。'],
+  ['ryota','これは一個一個の分子で [[v_x^2=\\frac13v^2]] という意味ではなく、多数の分子の二乗平均について成り立つ関係なんだね。'],
+  ['owl','そこは大事だ。では、前に求めた [[p=\\frac{Nm}{V}\\overline{v_x^2}]] へ代入するぞ。'],
+  ['ryota','[[\\overline{v_x^2}]] を [[\\frac13\\overline{v^2}]] に置き換えるから、[[p=\\frac{Nm}{3V}\\overline{v^2}]] になる。'],
+  ['owl','完成だ。両辺に [[V]] を掛ければ、[[pV=\\frac13Nm\\overline{v^2}]]。目に見える圧力を、分子の個数・質量・速さだけで表せた。'],
+  ['ryota','長かったな。（正直何も覚えていないけど、まあいいや。ポテチ食べよう）']
  ];
- return <section className="kinetic-lesson">
-  <header className="kinetic-intro"><span>MOLECULES TO PRESSURE</span><h2>見えない衝突から、圧力の式をつくる。</h2><p>「なぜ分子を考えるのか」から始め、分子1個の衝突を気体全体へ広げる。</p></header>
+ if(page==='dawn')return <section className="kinetic-lesson">
+  <header className="kinetic-intro"><span>THE DAWN OF KINETIC THEORY</span><h2>分子運動論の夜明け。</h2><p>見えない分子を仮定し、圧力と温度の正体を力学から説明する考え方が生まれるまで。</p></header>
   <section className="kinetic-step kinetic-why"><StepHeader number="1" kicker="WHY MOLECULES?" title="状態方程式だけでは、「なぜ」は分からない">目に見える気体の法則を、見えない分子の運動から説明する。</StepHeader><MacroMicroBridge/><Dialogue turns={introTurns}/></section>
   <section className="kinetic-step alternate"><StepHeader number="2" kicker="HISTORY" title="平均と確率で、見えない世界を計算した人">一個ずつ予測できなくても、無数の粒の集団なら規則を見つけられる。</StepHeader><BoltzmannProfile/><Dialogue turns={historyTurns}/><ProofGoal/></section>
   <section className="kinetic-step"><StepHeader number="3" kicker="ASSUMPTIONS" title="まず、計算できる簡単な気体を考える">複雑な現実から、衝突と圧力の関係だけを取り出す。</StepHeader><Dialogue turns={premiseTurns}/><AssumptionTriptych/><ElasticCollisionNote/></section>
-  <section className="kinetic-step alternate"><StepHeader number="4" kicker="ROADMAP" title="ゴールから逆算して、計算の作戦を立てる">圧力を求めるには何が必要かを、先に見通しておく。</StepHeader><Dialogue turns={strategyTurns}/><ProofRoadmap/></section>
-  <section className="kinetic-step"><StepHeader number="5" kicker="STEP 1 / ONE COLLISION" title="ステップ1｜1回の衝突で壁が受ける力積">質量 <MathFormula expression="m"/> の粒子が、右向きの速度 <MathFormula expression="v_x"/> で壁へ衝突する。リョウタのセリフを選び、壁が受ける力積まで導こう。</StepHeader><ImpulseDialogueQuiz/></section>
-  <section className="kinetic-step alternate"><StepHeader number="6" kicker="STEP 2 / COLLISION COUNT" title="ステップ2｜Δt秒間の衝突回数">壁の間隔は <MathFormula expression="L"/>。粒子が同じ壁へ戻るまでの往復距離 <MathFormula expression="2L"/> を使い、衝突回数を求める。</StepHeader><CollisionCountQuiz/></section>
-  <section className="kinetic-step"><StepHeader number="7" kicker="STEP 3 / AVERAGE FORCE" title="ステップ3｜力積の合計から平均の力へ">ステップ1の「1回の力積」と、ステップ2の「衝突回数」を掛け合わせる。</StepHeader><Dialogue turns={averageForceTurns}/><ForceTimeGraph/><div className="kinetic-calculation average-force-result"><small>一粒子が壁へ及ぼす平均の力</small><MathFormula expression="F_{平均}=\frac{mv_x^2}{L}" display/></div></section>
-  <section className="kinetic-step alternate"><StepHeader number="8" kicker="ALL MOLECULES" title="N個の分子へ広げ、力を圧力へ変える">分子ごとの力を足し、壁の面積で割る。</StepHeader><Dialogue turns={manyTurns}/><div className="kinetic-derivation"><section><small>すべての分子の力</small><MathFormula expression="F=\frac{m}{L}\sum_{i=1}^{N}v_{ix}^2=\frac{Nm}{L}\overline{v_x^2}" display/></section><i>面積 <MathFormula expression="S=L^2"/> で割る</i><section><small>壁が受ける圧力</small><MathFormula expression="p=\frac{F}{L^2}=\frac{Nm}{V}\overline{v_x^2}" display/></section></div></section>
-  <section className="kinetic-step"><StepHeader number="9" kicker="THREE DIRECTIONS" title="x・y・zの三方向を一つにまとめる">x方向の運動を、分子の速さ全体へ置き換える。</StepHeader><DirectionVisual/><Dialogue turns={directionTurns}/><FormulaBridge/></section>
+  <a className="kinetic-page-next" href="#/learn/part-2-chapter-3-section-1/part-2-chapter-3-section-1-lesson-15-pressure"><span><small>NEXT PAGE</small><strong>いよいよ、分子の衝突から圧力を導こう。</strong></span><b>導出ページへ進む →</b></a>
+ </section>;
+ return <section className="kinetic-lesson">
+  <header className="kinetic-intro"><span>DERIVING GAS PRESSURE</span><h2>分子の衝突から、圧力の式をつくる。</h2><p>一個の分子が壁へ与える力積から始め、気体全体の圧力まで組み立てる。</p></header>
+  <section className="kinetic-step alternate"><StepHeader number="1" kicker="ROADMAP" title="ゴールから逆算して、計算の作戦を立てる">圧力を求めるには何が必要かを、先に見通しておく。</StepHeader><Dialogue turns={strategyTurns}/><ProofRoadmap/></section>
+  <section className="kinetic-step"><StepHeader number="2" kicker="ONE COLLISION" title="1回の衝突で壁が受ける力積">質量 <MathFormula expression="m"/> の粒子が、右向きの速度 <MathFormula expression="v_x"/> で壁へ衝突する。リョウタのセリフを選び、壁が受ける力積まで導こう。</StepHeader><ImpulseDialogueQuiz/></section>
+  <section className="kinetic-step alternate"><StepHeader number="3" kicker="COLLISION COUNT" title="Δt秒間の衝突回数">壁の間隔は <MathFormula expression="L"/>。粒子が同じ壁へ戻るまでの往復距離 <MathFormula expression="2L"/> を使い、衝突回数を求める。</StepHeader><CollisionCountQuiz/></section>
+  <section className="kinetic-step"><StepHeader number="4" kicker="AVERAGE FORCE" title="力積の合計から平均の力へ">前の二段階で求めた「1回の力積」と「衝突回数」を掛け合わせる。</StepHeader><ForceTimeGraph/><Dialogue turns={averageForceTurns}/><div className="kinetic-calculation average-force-result"><small>一粒子が壁へ及ぼす平均の力</small><MathFormula expression="F_{平均}=\frac{mv_x^2}{L}" display/></div></section>
+  <section className="kinetic-step alternate"><StepHeader number="5" kicker="ALL MOLECULES" title="N個の分子へ広げ、力を圧力へ変える">分子ごとの力を足し、壁の面積で割る。</StepHeader><Dialogue turns={manyTurns}/><div className="kinetic-derivation"><section><small>すべての分子の力</small><MathFormula expression="F=\frac{m}{L}\sum_{i=1}^{N}v_{ix}^2=\frac{Nm}{L}\overline{v_x^2}" display/></section><i>面積 <MathFormula expression="S=L^2"/> で割る</i><section><small>壁が受ける圧力</small><MathFormula expression="p=\frac{F}{L^2}=\frac{Nm}{V}\overline{v_x^2}" display/></section></div></section>
+  <section className="kinetic-step"><StepHeader number="6" kicker="THREE DIRECTIONS" title="x・y・zの三方向を一つにまとめる">x方向の運動を、分子の速さ全体へ置き換える。</StepHeader><DirectionVisual/><Dialogue turns={directionTurns}/><FormulaBridge/></section>
   <section className="kinetic-next"><img src="/assets/vector-owl.png" alt="案内役のフクロウ"/><div><small>NEXT QUESTION</small><h3>分子が速くなると、温度も上がるのか？</h3><p>次はこの式と <MathFormula expression="pV=nRT"/> を比べ、分子の運動エネルギーと絶対温度を結びつける。</p></div></section>
   <div className="dialogue-takeaway kinetic-takeaway"><small>二人がつかんだこと</small><strong>気体分子運動論は、目に見える圧力を分子の集団運動で説明する。理想化した模型では、<MathFormula expression="pV=\frac13Nm\overline{v^2}"/> となり、分子が多いほど、重いほど、速く動くほど圧力は大きい。</strong></div>
  </section>;

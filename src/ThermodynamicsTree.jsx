@@ -22,12 +22,13 @@ const chapterMaps={
   ],edges:[['pressure','boyle'],['boyle','ideal'],['ideal','goal']],goalPrereqs:['ideal']
  },
  'part-2-chapter-3':{
-  route:'MICROSCOPIC VIEW',subtitle:'見えない分子の運動から、温度とエネルギーへ',goal:'温度と内部エネルギーを\n分子運動から説明できる',height:660,
+  route:'MICROSCOPIC VIEW',subtitle:'見えない分子の運動から、温度とエネルギーへ',goal:'温度と内部エネルギーを\n分子運動から説明できる',height:820,
   nodes:[
-   {key:'pressure',unit:0,x:500,y:530,title:'分子運動と圧力',caption:'壁との衝突から圧力を導く'},
-   {key:'temperature',unit:1,x:500,y:360,title:'分子運動と絶対温度',caption:'温度を運動エネルギーで見る',prereqs:['pressure']},
-   {key:'internal',unit:2,x:500,y:200,title:'気体の内部エネルギー',caption:'分子全体のエネルギーへ',prereqs:['temperature']},
-  ],edges:[['pressure','temperature'],['temperature','internal'],['internal','goal']],goalPrereqs:['internal']
+   {key:'dawn',unit:0,x:500,y:690,title:'分子運動論の夜明け',caption:'見えない分子から熱を考える'},
+   {key:'pressure',unit:1,x:500,y:520,title:'圧力の導出',caption:'壁との衝突から圧力を導く',prereqs:['dawn']},
+   {key:'temperature',unit:2,x:500,y:350,title:'分子運動と絶対温度',caption:'温度を運動エネルギーで見る',prereqs:['pressure']},
+   {key:'internal',unit:3,x:500,y:190,title:'気体の内部エネルギー',caption:'分子全体のエネルギーへ',prereqs:['temperature']},
+  ],edges:[['dawn','pressure'],['pressure','temperature'],['temperature','internal'],['internal','goal']],goalPrereqs:['internal']
  },
  'part-2-chapter-4':{
   route:'ENERGY & HEAT ENGINE',subtitle:'エネルギー保存から、熱機関の限界まで',goal:'状態変化と熱機関を\nエネルギーから説明できる',height:1020,

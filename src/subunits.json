@@ -639,18 +639,32 @@
       {
         "id": "part-2-chapter-3-section-1-lesson-15-A",
         "label": "A",
-        "title": "気体分子の運動と圧力",
+        "title": "分子運動論の夜明け",
         "sourceLesson": "気体分子の運動と状態方程式",
         "sourceGroup": 15,
         "sourcePage": 6,
         "goals": [
-          "気体分子の運動によって、気体の圧力がどのように表されるか理解する。"
+          "状態方程式だけでは説明できない圧力と温度の正体を、分子の運動から考える意味を理解する。",
+          "ボルツマンの考え方と、分子運動論で用いる理想化の前提を理解する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-3-section-1-lesson-15-pressure",
+        "label": "B",
+        "title": "分子運動論による圧力の導出",
+        "sourceLesson": "気体分子の運動と状態方程式",
+        "sourceGroup": 15,
+        "sourcePage": 6,
+        "goals": [
+          "一個の分子が壁へ与える力積から平均の力を求め、気体全体の圧力へ広げる。",
+          "運動方向の対称性を用いて、圧力を分子の速さの二乗平均で表す。"
         ],
         "origin": "syllabus"
       },
       {
         "id": "part-2-chapter-3-section-1-lesson-15-B",
-        "label": "B",
+        "label": "C",
         "title": "気体分子の運動と絶対温度",
         "sourceLesson": "気体分子の運動と状態方程式",
         "sourceGroup": 15,
@@ -663,7 +677,7 @@
       },
       {
         "id": "part-2-chapter-3-section-1-lesson-15-C",
-        "label": "C",
+        "label": "D",
         "title": "気体分子の運動と気体の内部エネルギー",
         "sourceLesson": "気体分子の運動と状態方程式",
         "sourceGroup": 15,
