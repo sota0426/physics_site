@@ -693,32 +693,20 @@
       {
         "id": "part-2-chapter-4-section-1-lesson-16-A",
         "label": "A",
-        "title": "熱力学第1法則",
+        "title": "熱力学第一法則と熱機関",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
         "sourceGroup": 16,
         "sourcePage": 6,
         "goals": [
-          "熱力学第1法則について理解する。間"
-        ],
-        "origin": "syllabus"
-      },
-      {
-        "id": "part-2-chapter-4-section-1-lesson-16-B",
-        "label": "B",
-        "title": "気体のする仕事",
-        "sourceLesson": "熱力学第1法則と気体の状態変化",
-        "sourceGroup": 16,
-        "sourcePage": 6,
-        "goals": [
-          "気体がする仕事、される仕事と熱力学第1法則についての関係を理解する。",
-          "実験結果をふまえて、気体が仕事をされたときの熱力学第1法則との関係を理解する。"
+          "熱と仕事がともにエネルギーを移動させる方法であることを理解する。",
+          "熱力学第一法則と、熱機関がサイクルを必要とする理由を理解する。"
         ],
         "origin": "syllabus"
       },
       {
         "id": "part-2-chapter-4-section-1-lesson-16-C",
-        "label": "C",
-        "title": "熱力学第1法則と気体の状態変化",
+        "label": "B",
+        "title": "4つの気体の状態変化",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
         "sourceGroup": 16,
         "sourcePage": 6,
@@ -729,7 +717,7 @@
       },
       {
         "id": "part-2-chapter-4-section-1-lesson-16-D",
-        "label": "D",
+        "label": "C",
         "title": "気体のモル熱容量",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
         "sourceGroup": 16,
@@ -742,7 +730,7 @@
       },
       {
         "id": "part-2-chapter-4-section-1-lesson-16-E",
-        "label": "E",
+        "label": "D",
         "title": "気体の状態変化のまとめ",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
         "sourceGroup": 16,
