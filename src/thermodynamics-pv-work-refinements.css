@@ -1,0 +1,277 @@
+.pv-temperature-field {
+  opacity: .72;
+}
+
+.pv-isotherm {
+  fill: none;
+  stroke-width: 3;
+  stroke-dasharray: 10 8;
+  opacity: .72;
+}
+
+.pv-isotherm.cool {
+  stroke: #5995aa;
+}
+
+.pv-isotherm.warm {
+  stroke: #c38a36;
+}
+
+.pv-isotherm.hot {
+  stroke: #d25c35;
+}
+
+.pv-temp-label {
+  font-family: KaTeX_Math, serif;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.pv-temp-label.cool {
+  fill: #477f94;
+}
+
+.pv-temp-label.warm {
+  fill: #9e691d;
+}
+
+.pv-temp-label.hot,
+.pv-hot-corner {
+  fill: #a7432c;
+}
+
+.pv-hot-corner {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.pv-state-path {
+  stroke-width: 5;
+}
+
+.pv-state-point {
+  stroke-width: 4;
+}
+
+.pv-state-note rect {
+  fill: #fffdf8;
+  fill-opacity: .92;
+  stroke-width: 1.5;
+}
+
+.pv-state-note text {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.pv-state-note.green rect {
+  stroke: #91b3a3;
+}
+
+.pv-state-note.green text {
+  fill: #2f6a54;
+}
+
+.pv-state-note.amber rect {
+  stroke: #d4ae69;
+}
+
+.pv-state-note.amber text {
+  fill: #95611d;
+}
+
+.pv-mini-area {
+  fill: #f4c868;
+  fill-opacity: .42;
+}
+
+.pv-mini-card figcaption .math-formula {
+  display: inline-block;
+  color: #9b6820;
+  font-size: 16px;
+}
+
+.pv-mini-card figcaption .pv-work-limit {
+  margin-top: 11px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  background: #fff3dc;
+  color: #8a5918;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.65;
+}
+
+.pv-piston-derivation {
+  margin-top: 22px;
+}
+
+.piston-panel-title {
+  fill: #315746;
+  font-size: 19px;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.piston-panel-subtitle {
+  fill: #6d8077;
+  font-size: 12px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.piston-cylinder {
+  fill: none;
+  stroke: #315746;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.piston-gas { opacity: .82; }
+.piston-particles circle { fill: #e08331; stroke: #fff4cf; stroke-width: 3; }
+.piston-old-position { fill: #6d8077; fill-opacity: .12; stroke: #6d8077; stroke-width: 3; stroke-dasharray: 8 7; }
+.piston-body, .piston-rod { fill: #d8b766; stroke: #76531f; stroke-width: 4; }
+.piston-force { fill: none; stroke-width: 6; stroke-linecap: round; }
+.piston-force.gas-force { stroke: #b66b1c; }
+.piston-force.outside-force { stroke: #477665; }
+.pv-piston-force-card rect { fill: #fffdf7; fill-opacity: .94; stroke-width: 1.5; }
+.pv-piston-force-card text { font-size: 11px !important; font-weight: 900; text-anchor: middle; }
+.pv-piston-force-card .formula { font-family: KaTeX_Math, serif; font-size: 16px !important; }
+.pv-piston-force-card.gas-card rect { stroke: #d79a4d; }
+.pv-piston-force-card.gas-card text { fill: #915714; }
+.pv-piston-force-card.outside-card rect { stroke: #82a494; }
+.pv-piston-force-card.outside-card text { fill: #315f50; }
+.piston-dimension, .piston-width, .piston-dimension-guide { fill: none; stroke: #677c72; stroke-width: 2; }
+.piston-dimension-guide { stroke-dasharray: 5 5; }
+.piston-dimension-label { fill: #536b60; font-size: 14px; font-weight: 900; }
+.piston-dimension-label.centered { text-anchor: middle; }
+.piston-derivation-box rect { fill: #fffaf0; stroke: #d5b46d; stroke-width: 2; }
+.piston-derivation-box path { stroke: #dbc999; stroke-width: 2; }
+.piston-derivation-box text { text-anchor: middle; }
+.piston-box-kicker { fill: #315746; font-size: 16px; font-weight: 900; }
+.piston-box-formula { fill: #65481d; font-size: 18px; font-weight: 900; }
+.piston-box-formula.math, .piston-box-result { font-family: KaTeX_Math, serif; font-size: 25px; }
+.piston-box-note { fill: #73847b; font-size: 13px; font-weight: 900; }
+.piston-box-result { fill: #2f6a54; font-weight: 900; }
+
+.pv-curve.isothermal {
+  stroke: #b57420;
+}
+
+.pv-curve.adiabatic {
+  stroke: #2f6a54;
+}
+
+.pv-curve-area.adiabatic {
+  fill: #7fb6a0;
+  fill-opacity: .34;
+}
+
+.pv-reference-isotherm {
+  fill: none;
+  stroke: #b57420;
+  stroke-width: 3;
+  stroke-dasharray: 7 7;
+  opacity: .55;
+}
+
+.pv-internal-panel {
+  max-width: 940px;
+  margin: 0 auto 30px;
+  padding: clamp(22px, 4vw, 38px);
+  border: 2px solid #c9d9d0;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 14px 34px #31574414;
+}
+
+.pv-internal-temperature {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 24px;
+  color: #61756a;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.pv-internal-temperature > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 18px;
+  overflow: hidden;
+  border-radius: 999px;
+}
+
+.pv-internal-temperature i:nth-child(1) {
+  background: #8cc5d2;
+}
+
+.pv-internal-temperature i:nth-child(2) {
+  background: #f2d887;
+}
+
+.pv-internal-temperature i:nth-child(3) {
+  background: #ec8750;
+}
+
+.pv-internal-formulas {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 18px;
+}
+
+.pv-internal-formulas > div {
+  display: grid;
+  min-height: 140px;
+  place-content: center;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid #cfddd5;
+  border-radius: 18px;
+  background: #f7faf7;
+  text-align: center;
+}
+
+.pv-internal-formulas small {
+  color: #718078;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.pv-internal-formulas .math-formula {
+  color: #315b48;
+  font-size: clamp(28px, 3.8vw, 46px);
+}
+
+.pv-internal-formulas > b {
+  color: #b67620;
+  font-size: 30px;
+}
+
+.pv-internal-panel > p {
+  margin: 22px auto 0;
+  color: #536a5e;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.9;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .pv-internal-formulas {
+    grid-template-columns: 1fr;
+  }
+
+  .pv-internal-formulas > b {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+
+  .pv-hot-corner {
+    font-size: 14px;
+  }
+}

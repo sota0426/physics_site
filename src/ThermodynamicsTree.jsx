@@ -31,16 +31,17 @@ const chapterMaps={
   ],edges:[['dawn','pressure'],['pressure','temperature'],['temperature','internal'],['internal','goal']],goalPrereqs:['internal']
  },
  'part-2-chapter-4':{
-  route:'ENERGY & HEAT ENGINE',subtitle:'エネルギー保存から、熱機関の限界まで',goal:'状態変化と熱機関を\nエネルギーから説明できる',height:1020,
+  route:'ENERGY & HEAT ENGINE',subtitle:'エネルギー保存から、熱機関の限界まで',goal:'状態変化と熱機関を\nエネルギーから説明できる',height:1180,
   nodes:[
-   {key:'first-law',unit:0,x:390,y:870,title:'熱力学第一法則と熱機関',caption:'熱・仕事・内部エネルギー'},
-   {key:'state',unit:1,x:500,y:680,title:'四つの状態変化',caption:'定積・定圧・等温・断熱',prereqs:['first-law']},
-   {key:'capacity',unit:2,x:300,y:500,title:'気体のモル熱容量',caption:'温め方による違いを比べる',prereqs:['state']},
-   {key:'summary',unit:3,x:300,y:320,title:'状態変化のまとめ',caption:'式とp–V図を使い分ける',prereqs:['capacity']},
-   {key:'second-law',unit:4,x:700,y:500,title:'第二法則と熱効率',caption:'熱を仕事へ変える限界',prereqs:['state']},
-   {key:'reversible',unit:5,x:700,y:320,title:'可逆・不可逆変化',caption:'自然な変化の向きを考える',prereqs:['second-law']},
-   {key:'carnot',unit:6,x:500,y:180,title:'カルノーサイクル',caption:'理想的な熱機関の限界',prereqs:['summary','reversible']},
-  ],edges:[['first-law','state'],['state','capacity'],['capacity','summary'],['state','second-law'],['second-law','reversible'],['summary','carnot'],['reversible','carnot'],['carnot','goal']],goalPrereqs:['carnot']
+   {key:'first-law',unit:0,x:390,y:1030,title:'熱力学第一法則と熱機関',caption:'熱・仕事・内部エネルギー'},
+   {key:'state',unit:1,x:500,y:850,title:'四つの状態変化',caption:'定積・定圧・等温・断熱',prereqs:['first-law']},
+   {key:'pv-work',unit:2,x:500,y:680,title:'P-Vグラフと気体の仕事',caption:'面積から仕事を読み取る',prereqs:['state']},
+   {key:'capacity',unit:3,x:300,y:500,title:'気体のモル熱容量',caption:'温め方による違いを比べる',prereqs:['pv-work']},
+   {key:'summary',unit:4,x:300,y:320,title:'状態変化のまとめ',caption:'式とp–V図を使い分ける',prereqs:['capacity']},
+   {key:'second-law',unit:5,x:700,y:500,title:'熱機関と熱効率',caption:'熱を仕事へ変える仕組みと限界',prereqs:['pv-work']},
+   {key:'reversible',unit:6,x:700,y:320,title:'可逆・不可逆変化',caption:'自然な変化の向きを考える',prereqs:['second-law']},
+   {key:'carnot',unit:7,x:500,y:180,title:'カルノーサイクル',caption:'理想的な熱機関の限界',prereqs:['summary','reversible']},
+  ],edges:[['first-law','state'],['state','pv-work'],['pv-work','capacity'],['capacity','summary'],['pv-work','second-law'],['second-law','reversible'],['summary','carnot'],['reversible','carnot'],['carnot','goal']],goalPrereqs:['carnot']
  }
 };
 

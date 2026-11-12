@@ -716,8 +716,22 @@
         "origin": "syllabus"
       },
       {
-        "id": "part-2-chapter-4-section-1-lesson-16-D",
+        "id": "part-2-chapter-4-section-1-lesson-16-pv",
         "label": "C",
+        "title": "P-Vグラフ（圧力–体積グラフ）と気体がする仕事",
+        "sourceLesson": "熱力学第1法則と気体の状態変化",
+        "sourceGroup": 16,
+        "sourcePage": 6,
+        "goals": [
+          "P-Vグラフ（圧力–体積グラフ）から圧力・体積・温度の変化を読み取る。",
+          "定圧変化で気体がする仕事がP-Vグラフの面積として表されることを理解する。",
+          "定積変化と、圧力が変化する過程での仕事の扱いを区別する。"
+        ],
+        "origin": "syllabus"
+      },
+      {
+        "id": "part-2-chapter-4-section-1-lesson-16-D",
+        "label": "D",
         "title": "気体のモル熱容量",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
         "sourceGroup": 16,
@@ -730,7 +744,7 @@
       },
       {
         "id": "part-2-chapter-4-section-1-lesson-16-E",
-        "label": "D",
+        "label": "E",
         "title": "気体の状態変化のまとめ",
         "sourceLesson": "熱力学第1法則と気体の状態変化",
         "sourceGroup": 16,
@@ -743,12 +757,13 @@
       {
         "id": "part-2-chapter-4-section-1-lesson-17-A",
         "label": "A",
-        "title": "熱力学第2法則と熱効率",
+        "title": "熱機関と熱効率",
         "sourceLesson": "熱力学第2法則と熱機関",
         "sourceGroup": 17,
         "sourcePage": 7,
         "goals": [
-          "物理基礎で学習した熱機関の熱効率をふまえて、熱力学第2法則について理解する。"
+          "熱機関がサイクルによって仕事を取り出す仕組みと熱効率を理解する。",
+          "熱効率が100％にならない理由を、熱力学第2法則と関連付けて理解する。"
         ],
         "origin": "syllabus"
       },
